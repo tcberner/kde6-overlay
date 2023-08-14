@@ -1,3 +1,11 @@
+Ports tree overlay to get KDE Frameworks and Plasma Desktop for Qt6.
+
+Structure:
+* libraries6: contains supporting libraries (phonon,...)
+* frameworks6: contains the KDE Frameworks ports
+* plasma6: contains the KDE Plasma ports 
+
+
 To use this overlay, add the tree to poudriere:
 
 ```
