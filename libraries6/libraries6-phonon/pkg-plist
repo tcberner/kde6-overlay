@@ -290,4 +290,3 @@ share/locale/zh_CN/LC_MESSAGES/libphonon_qt.qm
 share/locale/zh_CN/LC_MESSAGES/phononsettings_qt.qm
 share/locale/zh_TW/LC_MESSAGES/libphonon_qt.qm
 share/locale/zh_TW/LC_MESSAGES/phononsettings_qt.qm
-share/phonon4qt5/buildsystem/FindPhononInternal.cmake
