@@ -1,4 +1,4 @@
-COMMENT=	KDE Iibraries from git
+COMMENT=	KDE libraries from git
 
 SUBDIR += libraries6-phonon
 SUBDIR += libraries6-plasma-wayland-protocols
