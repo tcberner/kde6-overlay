@@ -7,7 +7,7 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE knotifyconfig (git version)
 
 USES=		gettext
-USE_KDE=	kcompletion ki18n kio \
+USE_KDE=	kcompletion ki18n kio knotifications kxmlgui phonon \
 		extra-cmake-modules:build
 USE_QT=		base
 
