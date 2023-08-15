@@ -17,3 +17,4 @@ Then build with `kde6` added as an overlay:
 ```
 > poudriere [...] -O kde6 [...]
 ```
+ ![Screenshot from a quite empty, and not quite working Plasma 6 Session :-)](https://github.com/tcberner/kde6-overlay/assets/1389031/00d75804-78f8-4efa-818d-d5ee1854a934)
