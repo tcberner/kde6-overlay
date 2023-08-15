@@ -1,4 +1,4 @@
-# KDE 6 versions 23-08-15--14-33-06
+# KDE 6 versions 23-08-15--15-34-55
 
 _KDE_ORIGIN_attica=	frameworks6
 _KDE_HASH_attica=	c77c91ed2213cf0bc744729643b2e1ed99dc2281
@@ -7,10 +7,6 @@ _KDE_VERSION_attica=	202306282059
 _KDE_ORIGIN_baloo=	frameworks6
 _KDE_HASH_baloo=	5cf4b2e06b8c9af2d5952a153dfe2560336f0004
 _KDE_VERSION_baloo=	202308080221
-
-_KDE_ORIGIN_bluez-qt=	frameworks6
-_KDE_HASH_bluez-qt=	787f81ae597a1c758d9f19f3c14356274ae24fa7
-_KDE_VERSION_bluez-qt=	202307241838
 
 _KDE_ORIGIN_breeze-icons=	frameworks6
 _KDE_HASH_breeze-icons=		ff691e1bf5bb2af3841a81323fe49c7c9c18519d
@@ -248,21 +244,13 @@ _KDE_ORIGIN_kxmlgui=	frameworks6
 _KDE_HASH_kxmlgui=	981d195232c18587d42b6a7b52d416b0d56cf057
 _KDE_VERSION_kxmlgui=	202308131630
 
-_KDE_ORIGIN_modemmanager-qt=	frameworks6
-_KDE_HASH_modemmanager-qt=	fa71a4d9aeca8d836689c0ec11b19c0dd948cae6
-_KDE_VERSION_modemmanager-qt=	202308131643
-
-_KDE_ORIGIN_networkmanager-qt=	frameworks6
-_KDE_HASH_networkmanager-qt=	a6287a94affa9158fadb1d4f0146e3aacab2eb2c
-_KDE_VERSION_networkmanager-qt=	202308131528
-
 _KDE_ORIGIN_oxygen-icons5=	frameworks6
 _KDE_HASH_oxygen-icons5=	95481bd2b850086999cb75fe8a155f98d9665db9
 _KDE_VERSION_oxygen-icons5=	202308070238
 
 _KDE_ORIGIN_plasma-framework=	frameworks6
-_KDE_HASH_plasma-framework=	7ad60914f75edfd0e10877a1614d4221561accb5
-_KDE_VERSION_plasma-framework=	202308150215
+_KDE_HASH_plasma-framework=	fdc2e868cec166fabb226796eb4e610028c830c5
+_KDE_VERSION_plasma-framework=	202308151242
 
 _KDE_ORIGIN_prison=	frameworks6
 _KDE_HASH_prison=	fedb699507dfdfdb89913ddcbc81934658f8131b
@@ -289,8 +277,8 @@ _KDE_HASH_syndication=		8004c796ebf962343d5bfb7dfbf36ea7e65ecfd0
 _KDE_VERSION_syndication=	202306302110
 
 _KDE_ORIGIN_syntax-highlighting=	frameworks6
-_KDE_HASH_syntax-highlighting=		5e89d5e9ce8b26655f12ccd155ffc639a67e5408
-_KDE_VERSION_syntax-highlighting=	202308140215
+_KDE_HASH_syntax-highlighting=		ca42b1edd89727f807df7398934b064ac792db3e
+_KDE_VERSION_syntax-highlighting=	202308151528
 
 _KDE_ORIGIN_threadweaver=	frameworks6
 _KDE_HASH_threadweaver=		8052fa55b1f3f2e8b71b254c1796000ea5f48122
@@ -400,14 +388,14 @@ _KDE_ORIGIN_selenium-webdriver-at-spi=	libraries6
 _KDE_HASH_selenium-webdriver-at-spi=	dbd9c098285ce9cfba99ee882f82ea6974eb949e
 _KDE_VERSION_selenium-webdriver-at-spi=	202308032338
 
-_KDE_LAST_COMMIT_DATE=	202308151410
+_KDE_LAST_COMMIT_DATE=	202308151528
 
-_KDE_COMPONENTS_frameworks6=	attica baloo bluez-qt breeze-icons \
-				extra-cmake-modules frameworkintegration \
-				kactivities kactivities-stats karchive kauth \
-				kbookmarks kcalendarcore kcmutils kcodecs \
-				kcolorscheme kcompletion kconfig kconfigwidgets \
-				kcontacts kcoreaddons kcrash kdav kdbusaddons \
+_KDE_COMPONENTS_frameworks6=	attica baloo breeze-icons extra-cmake-modules \
+				frameworkintegration kactivities \
+				kactivities-stats karchive kauth kbookmarks \
+				kcalendarcore kcmutils kcodecs kcolorscheme \
+				kcompletion kconfig kconfigwidgets kcontacts \
+				kcoreaddons kcrash kdav kdbusaddons \
 				kdeclarative kded kdesu kdnssd kdoctools \
 				kfilemetadata kglobalaccel kguiaddons kholidays \
 				ki18n kiconthemes kidletime kimageformats kio \
@@ -417,8 +405,7 @@ _KDE_COMPONENTS_frameworks6=	attica baloo bluez-qt breeze-icons \
 				krunner kservice ksvg ktexteditor ktexttemplate \
 				ktextwidgets kunitconversion kwallet kwayland \
 				kwidgetsaddons kwindowsystem kxmlgui \
-				modemmanager-qt networkmanager-qt oxygen-icons5 \
-				plasma-framework prison purpose \
+				oxygen-icons5 plasma-framework prison purpose \
 				qqc2-desktop-style solid sonnet syndication \
 				syntax-highlighting threadweaver
 _KDE_COMPONENTS_plasma6=	breeze kactivitymanagerd kdecoration \
