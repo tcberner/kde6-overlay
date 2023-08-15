@@ -4,13 +4,15 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE kwayland (git version)
 
 BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto \
-		plasma-wayland-protocols>=0:x11/plasma-wayland-protocols \
 		wayland-protocols>=1.27:graphics/wayland-protocols
+LIB_DEPENDS=	libwayland-cursor.so:graphics/wayland \
+		libxkbcommon.so:x11/libxkbcommon
 
-USE_KDE=	extra-cmake-modules:build
+USES=		gl
+USE_GL=		gl opengl
+USE_KDE=	extra-cmake-modules:build plasma-wayland-protocols:build
 USE_QT=		base wayland
 
 .include "${.CURDIR:H:H}/x11/kde6/files/bsd.kde6.mk"

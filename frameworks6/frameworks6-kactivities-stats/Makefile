@@ -4,7 +4,6 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE kactivities-stats (git version)
 
 USE_KDE=	kactivities kconfig \
 		extra-cmake-modules:build

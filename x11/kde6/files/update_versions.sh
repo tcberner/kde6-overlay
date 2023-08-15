@@ -4,11 +4,13 @@ base_url=https://invent.kde.org
 
 # meta data gets saved to bsd.kde6-version.mk
 version_file=$(dirname $0)/bsd.kde6-version.mk
+tree=$(realpath $(dirname $0)/../../..)
 
 # where to put the distfiles / git repositories
 dist_subdir=git/kde6
 checkout_base="$(make -VDISTDIR)/KDE/${dist_subdir}"
 
+ports_to_update=""
 new_distfile_count=0
 checkout_date=$(date "+%y-%m-%d--%H-%M-%S")
 log_file=/tmp/kde-update-version-${checkout_date}.log
@@ -39,8 +41,9 @@ update_info() {
 	elif [ "x${kde_kind}y" = "xlibrariesy" ] ; then
 		components_libraries6="${components_libraries6}${name} "
 	else
-		message "Unkonwn kind '${kde_kind}'"
-		continue
+		message "Unkonwn kind '${kde_kind}', moving to library6"
+		kde_kind=libraries
+		components_libraries6="${components_libraries6}${name} "
 	fi
 	distname=${kde_kind}6-${name}-${hash}
 	distfile=${checkout_base}/${distname}.tar.xz
@@ -65,19 +68,30 @@ update_info() {
 			--format=tar \
 			--prefix=${distname}/ \
 			${hash} 2>${log_file} | xz > ${distfile}
-					new_distfile_count=$(expr ${new_distfile_count} + 1)
-				else
-					message "Tarball for ${name} is up to date"
+		new_distfile_count=$(expr ${new_distfile_count} + 1)
+
+		local port="${kde_kind}6/${kde_kind}6-${name}"
+		ports_to_update="${ports_to_update}${port} "
+	else
+		message "Tarball for ${name} is up to date"
 	fi
 
 	echo -e "${mkname}_ORIGIN_${name}=\t\t${kde_kind}6"	>> ${version_file}
 	echo -e "${mkname}_HASH_${name}=\t\t${hash}"		>> ${version_file}
 	echo -e "${mkname}_VERSION_${name}=\t\t${version}"	>> ${version_file}
 	echo -e ""						>> ${version_file}
-
 }
 
-additional_repos="frameworks/ksvg"
+update_distinfos() {
+	for port in ${ports_to_update} ; do
+		if [ -d ${tree}/${port} ] ; then 
+			message "Updating distinfo in ${port}"
+			make -C${tree}/${port} makesum
+		fi
+	done
+}
+
+additional_repos="frameworks/ksvg libraries/plasma-wayland-protocols graphics/libkexiv2"
 yml_files="https://invent.kde.org/sysadmin/ci-management/-/raw/master/qt6/frameworks-latest.yml https://invent.kde.org/sysadmin/ci-management/-/raw/master/qt6/plasma-latest.yml"
 update_all() {
 	local repos="${additional_repos}"
@@ -100,22 +114,25 @@ message "Recreating version file ${version_file}"
 
 echo "# KDE 6 versions ${checkout_date}" > ${version_file}
 echo "" >> ${version_file}
-echo -e "_KDE_COMPONENTS=\t#" >> ${version_file}
-echo -e "_KDE_COMPONENTS_frameworks6=\t#"	>> ${version_file}
-echo -e "_KDE_COMPONENTS_plasma6=\t#"		>> ${version_file}
-echo -e "_KDE_COMPONENTS_libraries6=\t#"	>> ${version_file}
-
-echo "" >> ${version_file}
 message "Checking out repositories to ${checkout_base}"
 update_all
 
+message "Writing component lists"
 echo -e "_KDE_COMPONENTS_frameworks6=\t${components_frameworks6}" >> ${version_file}
 echo -e "_KDE_COMPONENTS_plasma6=\t${components_plasma6}" >> ${version_file}
 echo -e "_KDE_COMPONENTS_libraries6=\t${components_libraries6}" >> ${version_file}
-
+echo "" >> ${version_file}
 echo -e "_KDE_COMPONENTS=\t\${_KDE_COMPONENTS_libraries6} \${_KDE_COMPONENTS_frameworks6} \${_KDE_COMPONENTS_plasma6}" >> ${version_file}
 
+portfmt=$(which portfmt)
+if [ $? -eq 0 -a -x ${portfmt} ] ; then
+	message "Formatting ${version_file} using portfmt"
+	${portfmt} -i ${version_file}
+fi
+
+message "Updating distinfos"
+update_distinfos
 if [ ${new_distfile_count} -gt 0 ] ; then
 	message "Uploading distfiles"
-	$(dirname 0)/upload.sh ${checkout_base} ${dist_subdir}
+	$(dirname $0)/upload.sh ${checkout_base} ${dist_subdir}
 fi

@@ -4,8 +4,9 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE sonnet (git version)
 
+USES=		gl
+USE_GL=		gl opengl
 USE_KDE=	extra-cmake-modules:build
 USE_QT=		base declarative tools
 

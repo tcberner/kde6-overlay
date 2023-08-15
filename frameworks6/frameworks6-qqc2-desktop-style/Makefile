@@ -4,8 +4,9 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE qqc2-desktop-style (git version)
 
+USES=		gl
+USE_GL=		gl opengl
 USE_KDE=	kconfig kirigami \
 		extra-cmake-modules:build
 USE_QT=		base declarative

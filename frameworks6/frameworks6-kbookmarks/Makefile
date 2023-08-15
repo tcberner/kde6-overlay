@@ -4,9 +4,10 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE kbookmarks (git version)
 
-USE_KDE=	kconfig kconfigwidgets kcoreaddons \
+USES=		gl
+USE_GL=		gl opengl
+USE_KDE=	kcolorscheme kconfig kconfigwidgets kcoreaddons kwidgetsaddons \
 		extra-cmake-modules:build
 USE_QT=		base
 

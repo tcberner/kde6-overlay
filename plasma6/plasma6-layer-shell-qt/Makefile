@@ -4,10 +4,14 @@ CATEGORIES=	plasma6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE layer-shell-qt (git version)
 
 BUILD_DEPENDS=	wayland-protocols>0:graphics/wayland-protocols
 
+LIB_DEPENDS=	libwayland-client.so:graphics/wayland \
+		libxkbcommon.so:x11/libxkbcommon
+
+USES=		gl
+USE_GL=		gl opengl
 USE_KDE=	extra-cmake-modules:build
 USE_QT=		base wayland
 

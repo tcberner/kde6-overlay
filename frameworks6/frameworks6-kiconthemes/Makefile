@@ -4,10 +4,13 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE kiconthemes (git version)
 
-USES=		gettext
-USE_KDE=	karchive kconfigwidgets ki18n \
+LIB_DEPENDS=	libxkbcommon.so:x11/libxkbcommon
+
+USES=		gettext gl
+USE_GL=		gl opengl
+USE_KDE=	karchive kcolorscheme kconfig kconfigwidgets ki18n \
+		kwidgetsaddons \
 		extra-cmake-modules:build
 USE_QT=		base declarative svg
 

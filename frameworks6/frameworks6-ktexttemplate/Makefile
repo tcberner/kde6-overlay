@@ -4,7 +4,6 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE ktexttemplate (git version)
 
 USE_KDE=	extra-cmake-modules:build
 USE_QT=		base

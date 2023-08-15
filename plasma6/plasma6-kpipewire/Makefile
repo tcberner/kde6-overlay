@@ -4,14 +4,17 @@ CATEGORIES=	plasma6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE kpipewire (git version)
 
 BUILD_DEPENDS=	plasma-wayland-protocols>=0:x11/plasma-wayland-protocols
 LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
-		libpipewire-0.3.so:multimedia/pipewire
+		libdrm.so:graphics/libdrm \
+		libepoxy.so:graphics/libepoxy \
+		libpipewire-0.3.so:multimedia/pipewire \
+		libva.so:multimedia/libva \
+		libxkbcommon.so:x11/libxkbcommon
 
 USES=		gettext gl
-USE_GL=		gbm
+USE_GL=		egl gbm gl opengl
 USE_KDE=	kcoreaddons ki18n kwayland \
 		extra-cmake-modules:build
 USE_QT=		base declarative wayland

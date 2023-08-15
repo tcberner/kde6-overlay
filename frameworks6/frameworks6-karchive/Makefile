@@ -4,7 +4,8 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE karchive (git version)
+
+LIB_DEPENDS=	libzstd.so:archivers/zstd
 
 USE_KDE=	extra-cmake-modules:build
 USE_QT=		base tools

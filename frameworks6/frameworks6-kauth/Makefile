@@ -4,9 +4,8 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE kauth (git version)
 
-USE_KDE=	kded \
+USE_KDE=	kcoreaddons kded \
 		extra-cmake-modules:build
 USE_QT=		base
 

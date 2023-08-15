@@ -4,10 +4,11 @@ CATEGORIES=	libraries6 multimedia kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE multimedia framework
 
 LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 
+USES=		gl
+USE_GL=		gl opengl
 USE_KDE=	extra-cmake-modules:build
 USE_QT=		5compat base tools
 

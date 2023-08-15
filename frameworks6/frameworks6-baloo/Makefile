@@ -4,12 +4,12 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE baloo (git version)
 
 LIB_DEPENDS=	libinotify.so:devel/libinotify \
 		liblmdb.so:databases/lmdb
 
-USES=		gettext
+USES=		gettext gl
+USE_GL=		gl opengl
 USE_KDE=	kconfig kcoreaddons kcrash kdbusaddons kfilemetadata ki18n \
 		kidletime kio solid \
 		extra-cmake-modules:build

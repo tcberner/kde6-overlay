@@ -4,11 +4,11 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE solid (git version)
 
 RUN_DEPENDS=	bsdisks:sysutils/bsdisks
 
-USES=		bison
+USES=		bison gl
+USE_GL=		gl opengl
 USE_KDE=	extra-cmake-modules:build
 USE_QT=		base tools
 

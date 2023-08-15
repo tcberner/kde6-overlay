@@ -4,12 +4,13 @@ CATEGORIES=	plasma6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE plasma-nano (git version)
 
-USES=		gettext
+USES=		gettext gl xorg
+USE_GL=		gl opengl
 USE_KDE=	ki18n kservice kwayland kwindowsystem plasma-framework \
 		extra-cmake-modules:build
 USE_QT=		base declarative svg
+USE_XORG=	x11
 
 .include "${.CURDIR:H:H}/x11/kde6/files/bsd.kde6.mk"
 .include <bsd.port.mk>

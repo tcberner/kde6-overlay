@@ -1,7 +1,8 @@
 COMMENT=	KDE libraries from git
 
+SUBDIR += libraries6-libkexiv2
+SUBDIR += libraries6-libqaccessibilityclient
 SUBDIR += libraries6-phonon
 SUBDIR += libraries6-plasma-wayland-protocols
-SUBDIR += libraries6-libqaccessibilityclient
 
 .include <bsd.port.subdir.mk>

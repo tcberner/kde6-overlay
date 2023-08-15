@@ -4,10 +4,15 @@ CATEGORIES=	frameworks6 kde
 PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE kwindowsystem (git version)
 
+LIB_DEPENDS=	libxcb-keysyms.so:x11/xcb-util-keysyms \
+		libxkbcommon.so:x11/libxkbcommon
+
+USES=		gl xorg
+USE_GL=		gl opengl
 USE_KDE=	extra-cmake-modules:build
 USE_QT=		base declarative tools
+USE_XORG=	ice sm x11 xcb xext xfixes
 
 .include "${.CURDIR:H:H}/x11/kde6/files/bsd.kde6.mk"
 .include <bsd.port.mk>
