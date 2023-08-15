@@ -22,7 +22,10 @@ DISTNAME?=	${_KDE_PORT_ORIGIN}-${PORTNAME}-${_KDE_PORT_HASH}
 DIST_SUBDIR?=	KDE/git/kde6
 COMMENT?=	KDE ${PORTNAME} (git version)
 
-USES+=		cmake pkgconfig qt:6 tar:xz
+
+# Allow ports to opt-out of the default USES
+_KDE_DEFAULT_USES?=		cmake pkgconfig qt:6 tar:xz
+USES+=			${_KDE_DEFAULT_USES}
 
 #==================
 

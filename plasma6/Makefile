@@ -1,5 +1,6 @@
 COMMENT=	KDE Plasma Desktop from git
 
+SUBDIR += plasma6
 SUBDIR += plasma6-breeze
 SUBDIR += plasma6-kactivitymanagerd
 SUBDIR += plasma6-kdecoration

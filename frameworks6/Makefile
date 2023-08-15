@@ -1,5 +1,6 @@
 COMMENT=	KDE Frameworks from git
 
+SUBDIR += frameworks6
 SUBDIR += frameworks6-attica
 SUBDIR += frameworks6-baloo
 SUBDIR += frameworks6-breeze-icons
