@@ -93,6 +93,7 @@ update_distinfos() {
 	done
 }
 
+ignored_repos="frameworks/bluez-qt frameworks/modemmanager-qt frameworks/networkmanager-qt"
 additional_repos="frameworks/ksvg libraries/plasma-wayland-protocols graphics/libkexiv2"
 yml_files="https://invent.kde.org/sysadmin/ci-management/-/raw/master/qt6/frameworks-latest.yml https://invent.kde.org/sysadmin/ci-management/-/raw/master/qt6/plasma-latest.yml"
 update_all() {
@@ -104,8 +105,16 @@ update_all() {
 
 	to_fetch=$(echo ${repos} | tr ' ' '\n' | sort -u)
 	for repo in ${to_fetch} ; do
-		message "Updating ${repo}"
-		update_info ${repo}
+		local skip_repo=0
+		for ignored in ${ignored_repos} ; do
+			if [ "x${ignored}y" = "x${repo}y" ] ; then
+				skip_repo=1
+			fi
+		done
+		if [ ${skip_repo} -eq 0 ] ; then
+			message "Updating ${repo}"
+			update_info ${repo}
+		fi
 	done
 
 	commit_date=$(echo ${commit_dates} | tr ' ' '\n' | sort -u | tail -n1)
