@@ -17,6 +17,7 @@ LIB_DEPENDS=	libcanberra.so:audio/libcanberra \
 		libxcb-image.so:x11/xcb-util-image \
 		libxcb-util.so:x11/xcb-util \
 		libxkbcommon.so:x11/libxkbcommon
+RUN_DEPENDS=	${LOCALBASE}/bin/genv:sysutils/coreutils
 
 USES=		desktop-file-utils gettext gl xorg
 USE_GL=		gl opengl
