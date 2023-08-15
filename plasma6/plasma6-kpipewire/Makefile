@@ -5,7 +5,6 @@ PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
 
-BUILD_DEPENDS=	plasma-wayland-protocols>=0:x11/plasma-wayland-protocols
 LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libdrm.so:graphics/libdrm \
 		libepoxy.so:graphics/libepoxy \
@@ -16,7 +15,7 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 USES=		gettext gl
 USE_GL=		egl gbm gl opengl
 USE_KDE=	kcoreaddons ki18n kwayland \
-		extra-cmake-modules:build
+		extra-cmake-modules:build plasma-wayland-protocols:build
 USE_QT=		base declarative wayland
 
 .include "${.CURDIR:H:H}/x11/kde6/files/bsd.kde6.mk"
