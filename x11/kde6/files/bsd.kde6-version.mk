@@ -1,4 +1,4 @@
-# KDE 6 versions 23-08-15--11-21-24
+# KDE 6 versions 23-08-15--14-33-06
 
 _KDE_ORIGIN_attica=	frameworks6
 _KDE_HASH_attica=	c77c91ed2213cf0bc744729643b2e1ed99dc2281
@@ -381,8 +381,8 @@ _KDE_HASH_plasma-nano=		28e8313af7e994e04a831eb715208f614b482c17
 _KDE_VERSION_plasma-nano=	202308080220
 
 _KDE_ORIGIN_plasma-workspace=	plasma6
-_KDE_HASH_plasma-workspace=	0354102419af20ac47bf157631b0f885701f0613
-_KDE_VERSION_plasma-workspace=	202308151455
+_KDE_HASH_plasma-workspace=	a93fc9e0d49043416d0a75a89065ac77dd9ab442
+_KDE_VERSION_plasma-workspace=	202308151410
 
 _KDE_ORIGIN_plasma5support=	plasma6
 _KDE_HASH_plasma5support=	24fc7911fa5dc7c7d856cc4846dc4bf0602b29e3
@@ -399,6 +399,8 @@ _KDE_VERSION_systemsettings=	202308120219
 _KDE_ORIGIN_selenium-webdriver-at-spi=	libraries6
 _KDE_HASH_selenium-webdriver-at-spi=	dbd9c098285ce9cfba99ee882f82ea6974eb949e
 _KDE_VERSION_selenium-webdriver-at-spi=	202308032338
+
+_KDE_LAST_COMMIT_DATE=	202308151410
 
 _KDE_COMPONENTS_frameworks6=	attica baloo bluez-qt breeze-icons \
 				extra-cmake-modules frameworkintegration \

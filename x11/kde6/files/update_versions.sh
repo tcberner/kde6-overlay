@@ -22,6 +22,7 @@ message() {
 components_libraries6=""
 components_frameworks6=""
 components_plasma6=""
+commit_dates=""
 
 update_info() {
 	local repo="$1"
@@ -60,6 +61,7 @@ update_info() {
 		git -C ${repo_dir} pull --ff-only --rebase --autostash 2>${log_file}
 
 	version=$(git -C ${repo_dir} show -s --date=format:'%Y%m%d%H%M' --format=%cd 2>${log_file})
+	commit_dates="${commit_dates}${version} "
 	# ensure we're at the wanted hash
 	#
 	if [ ! -f ${distfile} ] ; then
@@ -105,6 +107,10 @@ update_all() {
 		message "Updating ${repo}"
 		update_info ${repo}
 	done
+
+	commit_date=$(echo ${commit_dates} | tr ' ' '\n' | sort -u | tail -n1)
+	echo -e "_KDE_LAST_COMMIT_DATE=\t\t${commit_date}" >> ${version_file}
+	echo -e ""						>> ${version_file}
 }
 
 
@@ -123,6 +129,8 @@ echo -e "_KDE_COMPONENTS_plasma6=\t${components_plasma6}" >> ${version_file}
 echo -e "_KDE_COMPONENTS_libraries6=\t${components_libraries6}" >> ${version_file}
 echo "" >> ${version_file}
 echo -e "_KDE_COMPONENTS=\t\${_KDE_COMPONENTS_libraries6} \${_KDE_COMPONENTS_frameworks6} \${_KDE_COMPONENTS_plasma6}" >> ${version_file}
+
+
 
 portfmt=$(which portfmt)
 if [ $? -eq 0 -a -x ${portfmt} ] ; then
