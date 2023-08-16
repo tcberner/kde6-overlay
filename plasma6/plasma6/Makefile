@@ -7,7 +7,7 @@ MAINTAINER=	kde@FreeBSD.org
 
 USES=		metaport
 _KDE_DEFAULT_USES=	# empty
-USE_KDE=	${_KDE_COMPONENTS_plasma6:Nextra-cmake-modules:S/$/:run/}
+USE_KDE=	${_KDE_COMPONENTS_plasma6:Nplasma-wayland-protocols:S/$/:run/}
 
 NO_CHECKSUM=	y
 
