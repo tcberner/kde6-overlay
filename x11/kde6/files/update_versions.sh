@@ -94,7 +94,8 @@ update_distinfos() {
 }
 
 ignored_repos="frameworks/bluez-qt frameworks/modemmanager-qt frameworks/networkmanager-qt"
-additional_repos="frameworks/ksvg libraries/plasma-wayland-protocols graphics/libkexiv2"
+additional_repos="frameworks/ksvg libraries/plasma-wayland-protocols graphics/libkexiv2 plasma/polkit-kde-agent-1 plasma/kinfocenter"
+
 yml_files="https://invent.kde.org/sysadmin/ci-management/-/raw/master/qt6/frameworks-latest.yml https://invent.kde.org/sysadmin/ci-management/-/raw/master/qt6/plasma-latest.yml"
 update_all() {
 	local repos="${additional_repos}"
