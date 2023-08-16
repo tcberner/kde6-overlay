@@ -9,5 +9,7 @@ USES=		metaport
 _KDE_DEFAULT_USES=	# empty
 USE_KDE=	${_KDE_COMPONENTS_plasma6:Nextra-cmake-modules:S/$/:run/}
 
+NO_CHECKSUM=	y
+
 .include "${.CURDIR:H:H}/x11/kde6/files/bsd.kde6.mk"
 .include <bsd.port.mk>
