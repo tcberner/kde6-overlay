@@ -52,6 +52,7 @@ SUBDIR += frameworks6-kpty
 SUBDIR += frameworks6-kquickcharts
 SUBDIR += frameworks6-krunner
 SUBDIR += frameworks6-kservice
+SUBDIR += frameworks6-kstatusnotifieritem
 SUBDIR += frameworks6-ksvg
 SUBDIR += frameworks6-ktexteditor
 SUBDIR += frameworks6-ktexttemplate

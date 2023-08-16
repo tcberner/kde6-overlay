@@ -1,0 +1,15 @@
+include/KF6/KStatusNotifierItem/KStatusNotifierItem
+include/KF6/KStatusNotifierItem/kstatusnotifieritem.h
+include/KF6/KStatusNotifierItem/kstatusnotifieritem_export.h
+include/KF6/KStatusNotifierItem/kstatusnotifieritem_version.h
+lib/cmake/KF6StatusNotifierItem/KF6StatusNotifierItemConfig.cmake
+lib/cmake/KF6StatusNotifierItem/KF6StatusNotifierItemConfigVersion.cmake
+lib/cmake/KF6StatusNotifierItem/KF6StatusNotifierItemTargets-%%CMAKE_BUILD_TYPE%%.cmake
+lib/cmake/KF6StatusNotifierItem/KF6StatusNotifierItemTargets.cmake
+lib/libKF6StatusNotifierItem.so
+lib/libKF6StatusNotifierItem.so.5.240.0
+lib/libKF6StatusNotifierItem.so.6
+%%QT_MKSPECDIR%%/modules/qt_KStatusNotifierItem.pri
+share/dbus-1/interfaces/kf6_org.kde.StatusNotifierItem.xml
+share/dbus-1/interfaces/kf6_org.kde.StatusNotifierWatcher.xml
+share/qlogging-categories6/kstatusnotifieritem.categories
