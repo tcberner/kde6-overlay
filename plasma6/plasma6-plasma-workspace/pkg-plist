@@ -846,8 +846,6 @@ share/kstyle/themes/qtgtk.themerc
 share/kstyle/themes/qtmotif.themerc
 share/kstyle/themes/qtplastique.themerc
 share/kstyle/themes/qtwindows.themerc
-share/kxmlgui6/kfontview/kfontviewpart.rc
-share/kxmlgui6/kfontview/kfontviewui.rc
 share/locale/af/LC_MESSAGES/kcm_colors.mo
 share/locale/af/LC_MESSAGES/kcm_cursortheme.mo
 share/locale/af/LC_MESSAGES/kcm_fonts.mo
