@@ -27,6 +27,8 @@ COMMENT?=	KDE ${PORTNAME} (git version)
 _KDE_DEFAULT_USES?=		cmake pkgconfig qt:6 tar:xz
 USES+=			${_KDE_DEFAULT_USES}
 
+USE_LOCALE?=		en_US.UTF-8
+
 #==================
 
 .  for component in ${_KDE_COMPONENTS}
