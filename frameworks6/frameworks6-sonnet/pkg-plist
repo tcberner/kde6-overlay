@@ -37,6 +37,8 @@ lib/libKF6SonnetUi.so.6
 %%QT_MKSPECDIR%%/modules/qt_SonnetCore.pri
 %%QT_MKSPECDIR%%/modules/qt_SonnetUi.pri
 %%QT_PLUGINDIR%%/designer/sonnet6widgets.so
+%%QT_PLUGINDIR%%/kf6/sonnet/sonnet_aspell.so
+%%QT_PLUGINDIR%%/kf6/sonnet/sonnet_hunspell.so
 %%QT_QMLDIR%%/org/kde/sonnet/libsonnetquickplugin.so
 %%QT_QMLDIR%%/org/kde/sonnet/plugins.qmltypes
 %%QT_QMLDIR%%/org/kde/sonnet/qmldir

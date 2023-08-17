@@ -1,3 +1,5 @@
+bin/UserFeedbackConsole
+bin/userfeedbackctl
 include/KUserFeedbackQt6/AbstractDataSource
 include/KUserFeedbackQt6/ApplicationVersionSource
 include/KUserFeedbackQt6/CompilerInfoSource
@@ -55,6 +57,8 @@ lib/libKUserFeedbackWidgetsQt6.so.1.2.1
 %%QT_MKSPECDIR%%/modules/qt_KUserFeedbackWidgetsQt6.pri
 %%QT_QMLDIR%%/org/kde/userfeedback/libKUserFeedbackQmlQt6.so
 %%QT_QMLDIR%%/org/kde/userfeedback/qmldir
+share/applications/org.kde.kuserfeedback-console.desktop
+share/metainfo/org.kde.kuserfeedback-console.appdata.xml
 share/locale/ar/LC_MESSAGES/userfeedbackconsole5_qt.qm
 share/locale/ar/LC_MESSAGES/userfeedbackprovider5_qt.qm
 share/locale/az/LC_MESSAGES/userfeedbackconsole5_qt.qm

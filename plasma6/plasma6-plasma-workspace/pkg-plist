@@ -186,6 +186,7 @@ lib/libweather_ion.so.7.0.0
 %%QT_PLUGINDIR%%/plasma/kcms/systemsettings/kcm_cursortheme.so
 %%QT_PLUGINDIR%%/plasma/kcms/systemsettings/kcm_desktoptheme.so
 %%QT_PLUGINDIR%%/plasma/kcms/systemsettings/kcm_fonts.so
+%%QT_PLUGINDIR%%/plasma/kcms/systemsettings/kcm_feedback.so
 %%QT_PLUGINDIR%%/plasma/kcms/systemsettings/kcm_icons.so
 %%QT_PLUGINDIR%%/plasma/kcms/systemsettings/kcm_lookandfeel.so
 %%QT_PLUGINDIR%%/plasma/kcms/systemsettings/kcm_nightcolor.so
@@ -290,6 +291,7 @@ share/applications/kcm_autostart.desktop
 share/applications/kcm_colors.desktop
 share/applications/kcm_cursortheme.desktop
 share/applications/kcm_desktoptheme.desktop
+share/applications/kcm_feedback.desktop
 share/applications/kcm_fontinst.desktop
 share/applications/kcm_fonts.desktop
 share/applications/kcm_icons.desktop
@@ -307,6 +309,7 @@ share/applications/org.kde.plasmawindowed.desktop
 share/applications/org.kde.systemmonitor.desktop
 share/config.kcfg/colorssettings.kcfg
 share/config.kcfg/cursorthemesettings.kcfg
+share/config.kcfg/feedbacksettings.kcfg
 share/config.kcfg/fontssettings.kcfg
 share/config.kcfg/freespacenotifier.kcfg
 share/config.kcfg/iconssettingsbase.kcfg
@@ -846,6 +849,8 @@ share/kstyle/themes/qtgtk.themerc
 share/kstyle/themes/qtmotif.themerc
 share/kstyle/themes/qtplastique.themerc
 share/kstyle/themes/qtwindows.themerc
+share/kxmlgui5/kfontview/kfontviewpart.rc
+share/kxmlgui5/kfontview/kfontviewui.rc
 share/locale/af/LC_MESSAGES/kcm_colors.mo
 share/locale/af/LC_MESSAGES/kcm_cursortheme.mo
 share/locale/af/LC_MESSAGES/kcm_fonts.mo

@@ -29,12 +29,13 @@ USE_KDE=	attica baloo kactivities kactivities-stats karchive kauth \
 		kjobwidgets knewstuff knotifications knotifyconfig kpackage \
 		kparts kpipewire kquickcharts krunner kscreenlocker kservice \
 		kstatusnotifieritem ksvg ktexteditor ktextwidgets \
-		kunitconversion kwallet kwayland kwidgetsaddons kwin \
-		kwindowsystem kxmlgui layer-shell-qt libkscreen libksysguard \
-		phonon plasma-framework plasma5support prison solid sonnet \
-		syntax-highlighting \
-		extra-cmake-modules:build plasma-wayland-protocols:build
-USE_QT=		5compat base declarative svg
+		kunitconversion kuserfeedback kwallet kwayland kwidgetsaddons \
+		kwin kwindowsystem kxmlgui layer-shell-qt libkexiv2 libkscreen \
+		libksysguard phonon plasma-framework plasma5support prison \
+		solid sonnet syntax-highlighting \
+		extra-cmake-modules:build plasma-wayland-protocols:build \
+		kirigami-addons:run
+USE_QT=		5compat base declarative svg wayland
 USE_XORG=	ice sm x11 xau xcb xcursor xext xfixes xft xi xrender xtst
 
 .include "${.CURDIR:H:H}/x11/kde6/files/bsd.kde6.mk"

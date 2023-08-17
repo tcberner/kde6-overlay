@@ -5,6 +5,9 @@ PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
 
+LIB_DEPENDS=	libaspell.so:textproc/aspell \
+		libhunspell-1.7.so:textproc/hunspell
+
 USES=		gl
 USE_GL=		gl opengl
 USE_KDE=	extra-cmake-modules:build

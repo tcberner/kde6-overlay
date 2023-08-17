@@ -7,7 +7,7 @@ MAINTAINER=	kde@FreeBSD.org
 
 USES=		metaport
 _KDE_DEFAULT_USES=	# empty
-USE_KDE=	${_KDE_COMPONENTS:Nextra-cmake-modules:Nplasma-wayland-protocols:Nkuserfeedback:S/$/:run/}
+USE_KDE=	${_KDE_COMPONENTS:Nextra-cmake-modules:Nplasma-wayland-protocols:Ndiscover:S/$/:run/}
 
 RUN_DEPENDS=	kate>0:editors/kate \
 		konsole>0:x11/konsole \

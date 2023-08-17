@@ -5,6 +5,8 @@ PKGNAMEPREFIX=	${_KDE_PORT_PREFIX}
 
 MAINTAINER=	kde@FreeBSD.org
 
+LIB_DEPENDS=	libeditorconfig.so:editors/editorconfig-core-c
+
 USES=		gettext gl xorg
 USE_GL=		gl opengl
 USE_KDE=	karchive kauth kcodecs kcolorscheme kcompletion kconfig \

@@ -94,7 +94,7 @@ update_distinfos() {
 }
 
 ignored_repos="frameworks/bluez-qt frameworks/modemmanager-qt frameworks/networkmanager-qt"
-additional_repos="frameworks/ksvg libraries/plasma-wayland-protocols graphics/libkexiv2 plasma/polkit-kde-agent-1 plasma/kinfocenter libraries/kirigami-addons"
+additional_repos="frameworks/ksvg libraries/plasma-wayland-protocols graphics/libkexiv2 plasma/polkit-kde-agent-1 plasma/kinfocenter libraries/kirigami-addons network/kio-extras plasma/breeze-gtk plasma/discover plasma/drkonqi plasma/kde-cli-tools plasma/kde-gtk-config plasma/kdeplasma-addons plasma/kgamma5 plasma/kmenuedit plasma/kscreen plasma/ksshaskpass plasma/ksystemstats plasma/kwallet-pam plasma/kwrited plasma/plank-player plasma/plasma-browser-integration plasma/plasma-disks plasma/plasma-integration plasma/plasma-pa plasma/plasma-sdk plasma/plasma-systemmonitor plasma/plasma-workspace-wallpapers plasma/sddm-kcm plasma/xdg-desktop-portal-kde"
 
 yml_files="https://invent.kde.org/sysadmin/ci-management/-/raw/master/qt6/frameworks-latest.yml https://invent.kde.org/sysadmin/ci-management/-/raw/master/qt6/plasma-latest.yml"
 update_all() {

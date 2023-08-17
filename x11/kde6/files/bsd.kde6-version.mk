@@ -1,4 +1,4 @@
-# KDE 6 versions 23-08-17--07-40-57
+# KDE 6 versions 23-08-17--17-53-16
 
 _KDE_ORIGIN_attica=	frameworks6
 _KDE_HASH_attica=	c77c91ed2213cf0bc744729643b2e1ed99dc2281
@@ -9,8 +9,8 @@ _KDE_HASH_baloo=	5cf4b2e06b8c9af2d5952a153dfe2560336f0004
 _KDE_VERSION_baloo=	202308080221
 
 _KDE_ORIGIN_breeze-icons=	frameworks6
-_KDE_HASH_breeze-icons=		190ab28b18d9f47a14d1808c538aad4e440e8b06
-_KDE_VERSION_breeze-icons=	202308161949
+_KDE_HASH_breeze-icons=		2eb68fda72ffe9e0a85809c88fb0195302769de7
+_KDE_VERSION_breeze-icons=	202308171446
 
 _KDE_ORIGIN_extra-cmake-modules=	frameworks6
 _KDE_HASH_extra-cmake-modules=		12f7a89b8632a37ec4cae226c6957455882abdbe
@@ -141,8 +141,8 @@ _KDE_HASH_kimageformats=	35ff3efbbcb9dbb1aff614ca7bdc4978c731b817
 _KDE_VERSION_kimageformats=	202308132219
 
 _KDE_ORIGIN_kio=	frameworks6
-_KDE_HASH_kio=		1344b5e8ad9ce94ccaed03b224d52bdfe2273a01
-_KDE_VERSION_kio=	202308170214
+_KDE_HASH_kio=		1f8976936d60979f4f329ba151d2cc870b7faf1b
+_KDE_VERSION_kio=	202308170910
 
 _KDE_ORIGIN_kirigami=	frameworks6
 _KDE_HASH_kirigami=	fd4d1fa89387ddb14cbf302fb31825a786b929e2
@@ -205,8 +205,8 @@ _KDE_HASH_kservice=	0f3cdceffedf0d78dd56a6a96cbeaa10eead205f
 _KDE_VERSION_kservice=	202308030256
 
 _KDE_ORIGIN_kstatusnotifieritem=	frameworks6
-_KDE_HASH_kstatusnotifieritem=		0d4a8ec462768ec3427d0d0347371f13cef65b46
-_KDE_VERSION_kstatusnotifieritem=	202308161337
+_KDE_HASH_kstatusnotifieritem=		41011d8fcaa067ad58cd8ffb005f0fb90e8387b1
+_KDE_VERSION_kstatusnotifieritem=	202308171334
 
 _KDE_ORIGIN_ksvg=	frameworks6
 _KDE_HASH_ksvg=		cdec04e76777c9efe2597e8b35785ccbacf0f993
@@ -316,17 +316,49 @@ _KDE_ORIGIN_polkit-qt-1=	libraries6
 _KDE_HASH_polkit-qt-1=		590e7108acf4e2ccb3d2d95e6c436054e310e756
 _KDE_VERSION_polkit-qt-1=	202209181404
 
+_KDE_ORIGIN_kio-extras=		libraries6
+_KDE_HASH_kio-extras=		5525f01909671ac8f563adafb889c7105d9dc2c2
+_KDE_VERSION_kio-extras=	202308170146
+
 _KDE_ORIGIN_breeze=	plasma6
-_KDE_HASH_breeze=	32b9f3c25efeafcc11747af5cf6bca7300d412e8
-_KDE_VERSION_breeze=	202308161330
+_KDE_HASH_breeze=	6c669f3c77c23deaeaf707a8e41913137d5a330c
+_KDE_VERSION_breeze=	202308171348
+
+_KDE_ORIGIN_breeze-gtk=		plasma6
+_KDE_HASH_breeze-gtk=		cbab51eebfe21827830ada2ee4b339c43371ca86
+_KDE_VERSION_breeze-gtk=	202305101228
+
+_KDE_ORIGIN_discover=	plasma6
+_KDE_HASH_discover=	706ac16ba26327ca19d4ba769b8472d4907fb946
+_KDE_VERSION_discover=	202308170214
+
+_KDE_ORIGIN_drkonqi=	plasma6
+_KDE_HASH_drkonqi=	bbc26922ca2926a7bc0023ac5b2422c1d35d535c
+_KDE_VERSION_drkonqi=	202308162026
 
 _KDE_ORIGIN_kactivitymanagerd=	plasma6
 _KDE_HASH_kactivitymanagerd=	3089422c393c67bd8690cdd87304590af2827b58
 _KDE_VERSION_kactivitymanagerd=	202308030258
 
+_KDE_ORIGIN_kde-cli-tools=	plasma6
+_KDE_HASH_kde-cli-tools=	96788c9e1bc6bd332c6e814eb8f29831f91219f0
+_KDE_VERSION_kde-cli-tools=	202308160737
+
+_KDE_ORIGIN_kde-gtk-config=	plasma6
+_KDE_HASH_kde-gtk-config=	889eddb89c1827c83968e8d81170261751bac2e6
+_KDE_VERSION_kde-gtk-config=	202308061329
+
 _KDE_ORIGIN_kdecoration=	plasma6
 _KDE_HASH_kdecoration=		67cfeaad9adf41abb88dc63482bf7ae761aeaa9e
 _KDE_VERSION_kdecoration=	202308030258
+
+_KDE_ORIGIN_kdeplasma-addons=	plasma6
+_KDE_HASH_kdeplasma-addons=	451c3ffbbcbfc57a5a9d342c750286b0f0a33f20
+_KDE_VERSION_kdeplasma-addons=	202308170215
+
+_KDE_ORIGIN_kgamma5=	plasma6
+_KDE_HASH_kgamma5=	670b5096283cf6bcac071493a5f63d9c6423b8f7
+_KDE_VERSION_kgamma5=	202308142202
 
 _KDE_ORIGIN_kglobalacceld=	plasma6
 _KDE_HASH_kglobalacceld=	4d4a6c6fd137d73d4a49abb59b1ec236e58c6c19
@@ -336,13 +368,33 @@ _KDE_ORIGIN_kinfocenter=	plasma6
 _KDE_HASH_kinfocenter=		d96f3a8308e86687f985a7bdeec3c1ffe8e2b01e
 _KDE_VERSION_kinfocenter=	202308170215
 
+_KDE_ORIGIN_kmenuedit=	plasma6
+_KDE_HASH_kmenuedit=	9c85b790ccd242b07b97354e43d69524ad50cf0a
+_KDE_VERSION_kmenuedit=	202308030258
+
 _KDE_ORIGIN_kpipewire=	plasma6
 _KDE_HASH_kpipewire=	c81f9b6cd6bd0af1358f44bd3764dfa612b740bf
 _KDE_VERSION_kpipewire=	202308142201
 
+_KDE_ORIGIN_kscreen=	plasma6
+_KDE_HASH_kscreen=	4f5e1ec35f0caf271f89f08c810162a35d85d105
+_KDE_VERSION_kscreen=	202308060218
+
 _KDE_ORIGIN_kscreenlocker=	plasma6
 _KDE_HASH_kscreenlocker=	1804e0a4ac0a0a63709f1662f3f9372dba9544bc
 _KDE_VERSION_kscreenlocker=	202308152351
+
+_KDE_ORIGIN_ksshaskpass=	plasma6
+_KDE_HASH_ksshaskpass=		d6d1dcd7ad02468850094728e4b8cf07ecf1ffab
+_KDE_VERSION_ksshaskpass=	202308110214
+
+_KDE_ORIGIN_ksystemstats=	plasma6
+_KDE_HASH_ksystemstats=		caf7164b15fd0b47b118505080d0e39f361acb1f
+_KDE_VERSION_ksystemstats=	202308030259
+
+_KDE_ORIGIN_kwallet-pam=	plasma6
+_KDE_HASH_kwallet-pam=		71f00fd1bfd901f84c9b2d2c8fb23132a751ac6a
+_KDE_VERSION_kwallet-pam=	202308070238
 
 _KDE_ORIGIN_kwayland-integration=	plasma6
 _KDE_HASH_kwayland-integration=		d5d93d032b4d9ac37ea4e5c2cb4e7ccba27dfb56
@@ -351,6 +403,10 @@ _KDE_VERSION_kwayland-integration=	202307311025
 _KDE_ORIGIN_kwin=	plasma6
 _KDE_HASH_kwin=		2f83e41967bdb480c5cfb4838178061da8c68b95
 _KDE_VERSION_kwin=	202308160215
+
+_KDE_ORIGIN_kwrited=	plasma6
+_KDE_HASH_kwrited=	029db33b11d48964535e05b17ca4bb76f4c650c4
+_KDE_VERSION_kwrited=	202308070239
 
 _KDE_ORIGIN_layer-shell-qt=	plasma6
 _KDE_HASH_layer-shell-qt=	143fd1755a2130b7783f0367f76f0a656cf9d164
@@ -372,17 +428,49 @@ _KDE_ORIGIN_oxygen=	plasma6
 _KDE_HASH_oxygen=	40721b09181301f2ccd4f069b3dca1ed17484d97
 _KDE_VERSION_oxygen=	202308080220
 
+_KDE_ORIGIN_plank-player=	plasma6
+_KDE_HASH_plank-player=		3383df8cf49c50c89585f72d886c0947f7dddd48
+_KDE_VERSION_plank-player=	202308070050
+
+_KDE_ORIGIN_plasma-browser-integration=		plasma6
+_KDE_HASH_plasma-browser-integration=		79e7a0102e08811a8833d7b610c6b7cbecf9fc50
+_KDE_VERSION_plasma-browser-integration=	202308170836
+
 _KDE_ORIGIN_plasma-desktop=	plasma6
 _KDE_HASH_plasma-desktop=	3a53db6bbd5e4d88393ed60a3eaafebef9d17747
 _KDE_VERSION_plasma-desktop=	202308170215
 
+_KDE_ORIGIN_plasma-disks=	plasma6
+_KDE_HASH_plasma-disks=		46c1720fd7965a6e89c4e53b9c638d885c05454f
+_KDE_VERSION_plasma-disks=	202308111613
+
+_KDE_ORIGIN_plasma-integration=		plasma6
+_KDE_HASH_plasma-integration=		6e0ecb6b7b070f54bb223a1b3d1e3ef6eaceea07
+_KDE_VERSION_plasma-integration=	202308170902
+
 _KDE_ORIGIN_plasma-nano=	plasma6
-_KDE_HASH_plasma-nano=		28e8313af7e994e04a831eb715208f614b482c17
-_KDE_VERSION_plasma-nano=	202308080220
+_KDE_HASH_plasma-nano=		6795ec9295e365168a426ff07fd250ae7152db4d
+_KDE_VERSION_plasma-nano=	202308171114
+
+_KDE_ORIGIN_plasma-pa=	plasma6
+_KDE_HASH_plasma-pa=	acd10129cdfebdfe6a5421041d0396e2d62bdb39
+_KDE_VERSION_plasma-pa=	202308162146
+
+_KDE_ORIGIN_plasma-sdk=		plasma6
+_KDE_HASH_plasma-sdk=		25d9202a90a0e2d33f6031ed4ea993222f445722
+_KDE_VERSION_plasma-sdk=	202308140216
+
+_KDE_ORIGIN_plasma-systemmonitor=	plasma6
+_KDE_HASH_plasma-systemmonitor=		56894bf9124b565230a1913b05070c107d21b4c2
+_KDE_VERSION_plasma-systemmonitor=	202308080225
 
 _KDE_ORIGIN_plasma-workspace=	plasma6
-_KDE_HASH_plasma-workspace=	5d8049e4ef6f96844f1ab129f7ea85ebdfcd44f7
-_KDE_VERSION_plasma-workspace=	202308171031
+_KDE_HASH_plasma-workspace=	e51ed4bca008d7a8a937940fa40c63f9740c1125
+_KDE_VERSION_plasma-workspace=	202308171042
+
+_KDE_ORIGIN_plasma-workspace-wallpapers=	plasma6
+_KDE_HASH_plasma-workspace-wallpapers=		20efda55a25d4eaefbd6fa6804c074e5a838c558
+_KDE_VERSION_plasma-workspace-wallpapers=	202308080220
 
 _KDE_ORIGIN_plasma5support=	plasma6
 _KDE_HASH_plasma5support=	24fc7911fa5dc7c7d856cc4846dc4bf0602b29e3
@@ -393,18 +481,26 @@ _KDE_HASH_polkit-kde-agent-1=		845d29ba5d2650e01717306fe9c1c099dcd00f60
 _KDE_VERSION_polkit-kde-agent-1=	202308070240
 
 _KDE_ORIGIN_powerdevil=		plasma6
-_KDE_HASH_powerdevil=		3d0a12cc7bc4b788ec012db1120c41e42b443425
-_KDE_VERSION_powerdevil=	202308160626
+_KDE_HASH_powerdevil=		62a885c7a9e85d690e0ecf02376f7827ffe1a4f3
+_KDE_VERSION_powerdevil=	202308170945
+
+_KDE_ORIGIN_sddm-kcm=	plasma6
+_KDE_HASH_sddm-kcm=	b60da2670cf24a9af372f8e82f129660bdd5eaac
+_KDE_VERSION_sddm-kcm=	202308160658
 
 _KDE_ORIGIN_systemsettings=	plasma6
 _KDE_HASH_systemsettings=	ccc9f74c3fca9cf4a9ae6308fc08b1589d62223d
 _KDE_VERSION_systemsettings=	202308120219
 
+_KDE_ORIGIN_xdg-desktop-portal-kde=	plasma6
+_KDE_HASH_xdg-desktop-portal-kde=	37ac10bc444ec24ec0b93241bd137d384396ff38
+_KDE_VERSION_xdg-desktop-portal-kde=	202308162214
+
 _KDE_ORIGIN_selenium-webdriver-at-spi=	libraries6
 _KDE_HASH_selenium-webdriver-at-spi=	dbd9c098285ce9cfba99ee882f82ea6974eb949e
 _KDE_VERSION_selenium-webdriver-at-spi=	202308032338
 
-_KDE_LAST_COMMIT_DATE=	202308171031
+_KDE_LAST_COMMIT_DATE=	202308171446
 
 _KDE_COMPONENTS_frameworks6=	attica baloo breeze-icons extra-cmake-modules \
 				frameworkintegration kactivities \
@@ -425,16 +521,23 @@ _KDE_COMPONENTS_frameworks6=	attica baloo breeze-icons extra-cmake-modules \
 				plasma-framework prison purpose \
 				qqc2-desktop-style solid sonnet syndication \
 				syntax-highlighting threadweaver
-_KDE_COMPONENTS_plasma6=	breeze kactivitymanagerd kdecoration \
-				kglobalacceld kinfocenter kpipewire \
-				kscreenlocker kwayland-integration kwin \
+_KDE_COMPONENTS_plasma6=	breeze breeze-gtk discover drkonqi \
+				kactivitymanagerd kde-cli-tools kde-gtk-config \
+				kdecoration kdeplasma-addons kgamma5 \
+				kglobalacceld kinfocenter kmenuedit kpipewire \
+				kscreen kscreenlocker ksshaskpass ksystemstats \
+				kwallet-pam kwayland-integration kwin kwrited \
 				layer-shell-qt libkscreen libksysguard milou \
-				oxygen plasma-desktop plasma-nano \
-				plasma-workspace plasma5support \
-				polkit-kde-agent-1 powerdevil systemsettings
+				oxygen plank-player plasma-browser-integration \
+				plasma-desktop plasma-disks plasma-integration \
+				plasma-nano plasma-pa plasma-sdk \
+				plasma-systemmonitor plasma-workspace \
+				plasma-workspace-wallpapers plasma5support \
+				polkit-kde-agent-1 powerdevil sddm-kcm \
+				systemsettings xdg-desktop-portal-kde
 _KDE_COMPONENTS_libraries6=	libkexiv2 kirigami-addons kuserfeedback \
 				libqaccessibilityclient phonon \
-				plasma-wayland-protocols polkit-qt-1 \
+				plasma-wayland-protocols polkit-qt-1 kio-extras \
 				selenium-webdriver-at-spi
 
 _KDE_COMPONENTS=	${_KDE_COMPONENTS_libraries6} \

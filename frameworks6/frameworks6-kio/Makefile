@@ -13,7 +13,7 @@ USE_GNOME=	libxml2 libxslt
 USE_KDE=	karchive kauth kbookmarks kcolorscheme kcompletion kconfig \
 		kconfigwidgets kcoreaddons kcrash kdbusaddons kdoctools \
 		kguiaddons ki18n kiconthemes kitemviews kjobwidgets kservice \
-		kwidgetsaddons kwindowsystem solid \
+		kwidgetsaddons kwindowsystem solid kwallet knotifications \
 		extra-cmake-modules:build
 USE_QT=		5compat base
 USE_XORG=	x11
