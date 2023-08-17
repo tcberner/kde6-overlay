@@ -28,5 +28,7 @@ lib/libKF6ItemModels.so
 lib/libKF6ItemModels.so.5.240.0
 lib/libKF6ItemModels.so.6
 %%QT_MKSPECDIR%%/modules/qt_KItemModels.pri
+%%QT_QMLDIR%%/org/kde/kitemmodels/libitemmodelsplugin.so
+%%QT_QMLDIR%%/org/kde/kitemmodels/qmldir
 share/qlogging-categories6/kitemmodels.categories
 share/qlogging-categories6/kitemmodels.renamecategories
