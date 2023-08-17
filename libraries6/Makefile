@@ -7,5 +7,6 @@ SUBDIR += libraries6-phonon
 SUBDIR += libraries6-plasma-wayland-protocols
 SUBDIR += libraries6-polkit-qt-1
 SUBDIR += libraries6-selenium-webdriver-at-spi
+SUBDIR += libraries6-kirigami-addons
 
 .include <bsd.port.subdir.mk>
