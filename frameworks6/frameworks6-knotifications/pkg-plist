@@ -3,7 +3,6 @@ include/KF6/KNotifications/KNotificationJobUiDelegate
 include/KF6/KNotifications/KNotificationReplyAction
 include/KF6/KNotifications/KNotificationRestrictions
 include/KF6/KNotifications/KNotifyConfig
-include/KF6/KNotifications/KStatusNotifierItem
 include/KF6/KNotifications/knotification.h
 include/KF6/KNotifications/knotificationjobuidelegate.h
 include/KF6/KNotifications/knotificationreplyaction.h
@@ -11,7 +10,6 @@ include/KF6/KNotifications/knotificationrestrictions.h
 include/KF6/KNotifications/knotifications_export.h
 include/KF6/KNotifications/knotifications_version.h
 include/KF6/KNotifications/knotifyconfig.h
-include/KF6/KNotifications/kstatusnotifieritem.h
 lib/cmake/KF6Notifications/KF6NotificationsConfig.cmake
 lib/cmake/KF6Notifications/KF6NotificationsConfigVersion.cmake
 lib/cmake/KF6Notifications/KF6NotificationsTargets-%%CMAKE_BUILD_TYPE%%.cmake
@@ -22,8 +20,6 @@ lib/libKF6Notifications.so.6
 %%QT_MKSPECDIR%%/modules/qt_KNotifications.pri
 %%QT_QMLDIR%%/org/kde/notification/libknotificationqmlplugin.so
 %%QT_QMLDIR%%/org/kde/notification/qmldir
-share/dbus-1/interfaces/kf6_org.kde.StatusNotifierItem.xml
-share/dbus-1/interfaces/kf6_org.kde.StatusNotifierWatcher.xml
 share/locale/af/LC_MESSAGES/knotifications6_qt.qm
 share/locale/ar/LC_MESSAGES/knotifications6_qt.qm
 share/locale/as/LC_MESSAGES/knotifications6_qt.qm
