@@ -28,10 +28,11 @@ USE_KDE=	attica baloo kactivities kactivities-stats karchive kauth \
 		ki18n kiconthemes kidletime kio kitemmodels kitemviews \
 		kjobwidgets knewstuff knotifications knotifyconfig kpackage \
 		kparts kpipewire kquickcharts krunner kscreenlocker kservice \
-		ksvg ktexteditor ktextwidgets kunitconversion kwallet kwayland \
-		kwidgetsaddons kwin kwindowsystem kxmlgui layer-shell-qt \
-		libkscreen libksysguard phonon plasma-framework plasma5support \
-		prison solid sonnet syntax-highlighting \
+		kstatusnotifieritem ksvg ktexteditor ktextwidgets \
+		kunitconversion kwallet kwayland kwidgetsaddons kwin \
+		kwindowsystem kxmlgui layer-shell-qt libkscreen libksysguard \
+		phonon plasma-framework plasma5support prison solid sonnet \
+		syntax-highlighting \
 		extra-cmake-modules:build plasma-wayland-protocols:build
 USE_QT=		5compat base declarative svg
 USE_XORG=	ice sm x11 xau xcb xcursor xext xfixes xft xi xrender xtst
