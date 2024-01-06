@@ -366,7 +366,6 @@ man/pt/man8/kcookiejar5.8.gz
 man/pt_BR/man8/kcookiejar5.8.gz
 man/sv/man8/kcookiejar5.8.gz
 man/uk/man8/kcookiejar5.8.gz
-share/applications/kcm_trash.desktop
 share/applications/ktelnetservice5.desktop
 share/dbus-1/interfaces/kf5_org.kde.KCookieServer.xml
 share/dbus-1/interfaces/kf5_org.kde.KDirNotify.xml
