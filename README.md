@@ -4,9 +4,8 @@ Ports tree overlay to get KDE Frameworks and Plasma Desktop for Qt6.
 
 
 Structure:
-* libraries6: contains supporting libraries (phonon,...)
-* frameworks6: contains the KDE Frameworks ports
-* plasma6: contains the KDE Plasma ports 
+* The structure of the overlay now follows the normal ports tree, this means,
+  that the category Makefiles are not included (so INDEX will fail).
 
 
 To use this overlay, add the tree to poudriere:
@@ -22,6 +21,4 @@ Then build with `kde6` added as an overlay:
 
 ```
 
-
-
-The [patch](https://people.freebsd.org/~tcberner/patches/0001-KDE6-mask-some-file-in-Qt-5-base-ports-that-are-inst.patch) disables some parts in the kf5-ports in the tree that will allow you to install konsole, kate, dolphin, gwenview and okular inside your KDE Plasma 6 desktop.
+The KDE Gear ports included in this overlay are mostly Qt6 based.  So installing konsole for example will give you a Qt6-based konsole.
