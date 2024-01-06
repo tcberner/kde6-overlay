@@ -1,21 +1,19 @@
 PORTNAME=	kde6
-DISTVERSION=	${_KDE_VERSION_PREFIX}${_KDE_LAST_COMMIT_DATE}
-CATEGORIES=	x11 kde
+DISTVERSION=	${KDE_PLASMA_VERSION}.${KDE_APPLICATIONS_VERSION}
+CATEGORIES=	x11 kde kde
 
-COMMENT=	KDE Desktop metaport (from git)
 MAINTAINER=	kde@FreeBSD.org
+COMMENT=	KDE Plasma Desktop and Applications (current)
+WWW=		https://www.kde.org
 
-USES=		metaport
-_KDE_DEFAULT_USES=	# empty
-USE_KDE=	${_KDE_COMPONENTS:Nextra-cmake-modules:Nplasma-wayland-protocols:Ndiscover:Nkio-extras:S/$/:run/}
-
-RUN_DEPENDS=	kate>0:editors/kate \
+RUN_DEPENDS=	plasma6-plasma>0:x11/plasma6-plasma \
+		kf6-frameworks>0:x11/kf6-frameworks \
+		kate>0:editors/kate \
+		dolphin>0:x11-fm/dolphin \
 		konsole>0:x11/konsole \
-		okular>0:graphics/okular \
-		gwenview>0:graphics/gwenview \
-		dolphin>0:x11-fm/dolphin
+		gwenview>0:graphics/gwenview
 
-NO_CHECKSUM=	y
+USES=		kde:6 metaport qt:6
+USE_QT=		# empty
 
-.include "${.CURDIR:H:H}/x11/kde6/files/bsd.kde6.mk"
 .include <bsd.port.mk>
