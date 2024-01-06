@@ -1,8 +1,14 @@
 Ports tree overlay to get KDE Frameworks and Plasma Desktop for Qt6.
 
+Screenshot below is of the of the alpha release:
 ![plasma6-2](https://github.com/tcberner/kde6-overlay/assets/1389031/91686e4f-1a4d-4277-8fad-cdf7c1bc3b78)
 
+
+
 See [KDE's 6th Megarelease - Beta 2](https://kde.org/announcements/megarelease/6/beta2/) for the details of the included packages.
+
+* KDE Frameworks 5.247.0 is already in the FreeBSD main tree, so not included here
+* KDE Plasma 5.91.0 is already in the FreeBSD main tree, so not included here
 
 
 Structure:
