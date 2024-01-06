@@ -1,5 +1,6 @@
 PORTNAME=	krfb
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -21,11 +22,11 @@ USE_QT=		core dbus gui network widgets x11extras xml \
 USE_XORG=	x11 xcb xdamage xext xtst
 
 OPTIONS_DEFINE=			DOCS PIPEWIRE TELEPATHY
-OPTIONS_DEFAULT=		PIPEWIRE
 OPTIONS_SUB=			yes
 PIPEWIRE_DESC=			Screen capture via PipeWire
 PIPEWIRE_LIB_DEPENDS=		libpipewire-0.3.so:multimedia/pipewire
 PIPEWIRE_USE=			KDE=kpipewire
+PIPEWIRE_IGNORE=		Conflicts with kf6-kpipewire
 PIPEWIRE_CMAKE_BOOL_OFF=	DISABLE_PIPEWIRE
 TELEPATHY_DESC=			Support for Telepathy Tubes
 TELEPATHY_LIB_DEPENDS=		libtelepathy-qt5.so:net-im/telepathy-qt
