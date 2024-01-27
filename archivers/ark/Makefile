@@ -8,13 +8,14 @@ WWW=		https://utils.kde.org/projects/ark/
 
 LICENSE=	GPLv2+
 
-USES=		cmake compiler:c++11-lang cpe desktop-file-utils gettext kde:6 \
-		libarchive qt:6 tar:xz xorg
-USE_KDE=	archive auth bookmarks codecs completion config configwidgets \
-		coreaddons crash dbusaddons doctools i18n iconthemes \
-		itemmodels itemviews jobwidgets kio parts pty service solid \
-		sonnet textwidgets widgetsaddons windowsystem xmlgui \
+USES=		cmake compiler:c++11-lang cpe desktop-file-utils gettext gl \
+		kde:6 libarchive qt:6 tar:xz xorg
+USE_KDE=	bookmarks colorscheme completion config configwidgets \
+		coreaddons crash dbusaddons doctools filemetadata i18n \
+		iconthemes itemviews jobwidgets kio parts pty service solid \
+		widgetsaddons windowsystem xmlgui \
 		ecm:build
+USE_GL=		gl opengl
 USE_QT=		base
 USE_XORG=	x11
 USE_LDCONFIG=	yes

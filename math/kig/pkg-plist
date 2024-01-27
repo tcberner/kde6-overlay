@@ -378,4 +378,4 @@ share/locale/uk/LC_MESSAGES/kig.mo
 share/locale/xh/LC_MESSAGES/kig.mo
 share/locale/zh_CN/LC_MESSAGES/kig.mo
 share/locale/zh_TW/LC_MESSAGES/kig.mo
-share/metainfo/org.kde.kig.appdata.xml
+share/metainfo/org.kde.kig.metainfo.xml

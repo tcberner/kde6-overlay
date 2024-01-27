@@ -1,9 +1,9 @@
 bin/korganizer
-lib/libkorganizer_core.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libkorganizer_core.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libkorganizer_core.so.6
-lib/libkorganizer_interfaces.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libkorganizer_interfaces.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libkorganizer_interfaces.so.6
-lib/libkorganizerprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libkorganizerprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libkorganizerprivate.so.6
 %%QT_PLUGINDIR%%/korganizerpart.so
 %%QT_PLUGINDIR%%/pim6/kcms/korganizer/korganizer_configcolorsandfonts.so

@@ -1,8 +1,8 @@
 bin/akregator
 bin/akregatorstorageexporter
-lib/libakregatorinterfaces.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libakregatorinterfaces.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libakregatorinterfaces.so.6
-lib/libakregatorprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libakregatorprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libakregatorprivate.so.6
 %%QT_PLUGINDIR%%/akregatorpart.so
 %%QT_PLUGINDIR%%/pim6/kcms/akregator/akregator_config_advanced.so

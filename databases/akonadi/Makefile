@@ -41,7 +41,7 @@ MYSQL_USES=		mysql:server
 MYSQL_USE=		QT=sqldriver-mysql:run
 
 PGSQL_DESC=		Install PostgreSQL Qt plugin
-PGSQL_USE=		QT=sqldriver-pgsql:run
+PGSQL_USE=		QT=sqldriver-psql:run
 
 .include <bsd.port.options.mk>
 

@@ -2,11 +2,13 @@ bin/kget
 lib/libkgetcore.so
 lib/libkgetcore.so.6
 lib/libkgetcore.so.6.0.0
+%%QT_PLUGINDIR%%/kget/kget_bittorrent.so
 %%QT_PLUGINDIR%%/kget/kget_checksumsearchfactory.so
 %%QT_PLUGINDIR%%/kget/kget_kio.so
 %%QT_PLUGINDIR%%/kget/kget_metalinkfactory.so
 %%QT_PLUGINDIR%%/kget/kget_mirrorsearchfactory.so
 %%QT_PLUGINDIR%%/kget/kget_multisegkiofactory.so
+%%QT_PLUGINDIR%%/kget_kcms/kcm_kget_bittorrentfactory.so
 %%QT_PLUGINDIR%%/kget_kcms/kcm_kget_checksumsearchfactory.so
 %%QT_PLUGINDIR%%/kget_kcms/kcm_kget_metalinkfactory.so
 %%QT_PLUGINDIR%%/kget_kcms/kcm_kget_mirrorsearchfactory.so

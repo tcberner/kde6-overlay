@@ -1,8 +1,8 @@
 bin/akonadi_notes_agent
 bin/knotes
-lib/libknotesprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libknotesprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libknotesprivate.so.6
-lib/libnotesharedprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libnotesharedprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libnotesharedprivate.so.6
 %%QT_PLUGINDIR%%/pim6/kcms/knotes/kcm_knote_action.so
 %%QT_PLUGINDIR%%/pim6/kcms/knotes/kcm_knote_collection.so

@@ -1,5 +1,5 @@
 bin/accountwizard
-lib/libaccountwizard.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libaccountwizard.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libaccountwizard.so.6
 %%QT_QMLDIR%%/org/kde/pim/accountwizard/components/BasePage.qml
 %%QT_QMLDIR%%/org/kde/pim/accountwizard/components/InfoDetail.qml

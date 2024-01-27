@@ -2,9 +2,9 @@ bin/kalarm
 bin/kalarmautostart
 etc/xdg/autostart/kalarm.autostart.desktop
 lib/libexec/kf6/kauth/kalarm_helper
-lib/libkalarmcalendar.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libkalarmcalendar.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libkalarmcalendar.so.6
-lib/libkalarmplugin.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libkalarmplugin.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libkalarmplugin.so.6
 %%QT_PLUGINDIR%%/pim6/kalarm/akonadiplugin.so
 share/applications/org.kde.kalarm.desktop

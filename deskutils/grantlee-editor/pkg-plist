@@ -1,7 +1,7 @@
 bin/contactprintthemeeditor
 bin/contactthemeeditor
 bin/headerthemeeditor
-lib/libgrantleethemeeditor.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libgrantleethemeeditor.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libgrantleethemeeditor.so.6
 share/applications/org.kde.contactprintthemeeditor.desktop
 share/applications/org.kde.contactthemeeditor.desktop

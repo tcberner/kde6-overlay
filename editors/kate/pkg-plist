@@ -33,6 +33,7 @@ lib/libkateprivate.so.%%KDE_APPLICATIONS_VERSION%%
 %%QT_PLUGINDIR%%/kf6/ktexteditor/textfilterplugin.so
 man/ca/man1/kate.1.gz
 man/de/man1/kate.1.gz
+man/eo/man1/kate.1.gz
 man/es/man1/kate.1.gz
 man/it/man1/kate.1.gz
 man/man1/kate.1.gz
@@ -745,6 +746,7 @@ share/locale/it/LC_MESSAGES/ktexteditorpreviewplugin.mo
 share/locale/it/LC_MESSAGES/lspclient.mo
 share/locale/it/LC_MESSAGES/rainbowparens.mo
 share/locale/it/LC_MESSAGES/tabswitcherplugin.mo
+share/locale/ja/LC_MESSAGES/formatplugin.mo
 share/locale/ja/LC_MESSAGES/kate-ctags-plugin.mo
 share/locale/ja/LC_MESSAGES/kate-replicode-plugin.mo
 share/locale/ja/LC_MESSAGES/kate.mo
@@ -769,6 +771,7 @@ share/locale/ja/LC_MESSAGES/katexmlcheck.mo
 share/locale/ja/LC_MESSAGES/katexmltools.mo
 share/locale/ja/LC_MESSAGES/ktexteditorpreviewplugin.mo
 share/locale/ja/LC_MESSAGES/lspclient.mo
+share/locale/ja/LC_MESSAGES/rainbowparens.mo
 share/locale/ja/LC_MESSAGES/tabswitcherplugin.mo
 share/locale/ka/LC_MESSAGES/formatplugin.mo
 share/locale/ka/LC_MESSAGES/kate-ctags-plugin.mo
@@ -1540,6 +1543,7 @@ share/locale/zh_CN/LC_MESSAGES/ktexteditorpreviewplugin.mo
 share/locale/zh_CN/LC_MESSAGES/lspclient.mo
 share/locale/zh_CN/LC_MESSAGES/rainbowparens.mo
 share/locale/zh_CN/LC_MESSAGES/tabswitcherplugin.mo
+share/locale/zh_TW/LC_MESSAGES/formatplugin.mo
 share/locale/zh_TW/LC_MESSAGES/kate-ctags-plugin.mo
 share/locale/zh_TW/LC_MESSAGES/kate-replicode-plugin.mo
 share/locale/zh_TW/LC_MESSAGES/kate.mo
@@ -1552,6 +1556,7 @@ share/locale/zh_TW/LC_MESSAGES/katefilebrowserplugin.mo
 share/locale/zh_TW/LC_MESSAGES/katefiletree.mo
 share/locale/zh_TW/LC_MESSAGES/kategdbplugin.mo
 share/locale/zh_TW/LC_MESSAGES/kategitblameplugin.mo
+share/locale/zh_TW/LC_MESSAGES/katekeyboardmacros.mo
 share/locale/zh_TW/LC_MESSAGES/katekonsoleplugin.mo
 share/locale/zh_TW/LC_MESSAGES/kateproject.mo
 share/locale/zh_TW/LC_MESSAGES/katesearch.mo
@@ -1563,6 +1568,7 @@ share/locale/zh_TW/LC_MESSAGES/katexmlcheck.mo
 share/locale/zh_TW/LC_MESSAGES/katexmltools.mo
 share/locale/zh_TW/LC_MESSAGES/ktexteditorpreviewplugin.mo
 share/locale/zh_TW/LC_MESSAGES/lspclient.mo
+share/locale/zh_TW/LC_MESSAGES/rainbowparens.mo
 share/locale/zh_TW/LC_MESSAGES/tabswitcherplugin.mo
 share/metainfo/org.kde.kate.appdata.xml
 share/metainfo/org.kde.kwrite.appdata.xml

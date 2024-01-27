@@ -2,8 +2,6 @@ PORTNAME=	kgpg
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
 CATEGORIES=	security kde kde-applications
 
-IGNORE=		Tarball is misses upstream fix for AkonadiContacts 
-
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Encryption tool for KDE
 WWW=		https://utils.kde.org/projects/kgpg/
@@ -16,7 +14,8 @@ USE_KDE=	akonadi akonadicontacts archive auth bookmarks codecs \
 		completion config configwidgets contacts coreaddons crash \
 		dbusaddons doctools grantleetheme i18n iconthemes itemmodels \
 		itemviews jobwidgets kio notifications service solid sonnet \
-		textwidgets widgetsaddons windowsystem xmlgui \
+		statusnotifieritem textwidgets widgetsaddons windowsystem \
+		xmlgui \
 		ecm:build
 USE_QT=		base
 USE_XORG=	x11

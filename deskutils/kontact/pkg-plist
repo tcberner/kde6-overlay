@@ -1,5 +1,5 @@
 bin/kontact
-lib/libkontactprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libkontactprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libkontactprivate.so.6
 %%QT_PLUGINDIR%%/pim6/kcms/kontact/kcm_kontact.so
 share/applications/org.kde.kontact.desktop

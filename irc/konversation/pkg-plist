@@ -13,7 +13,7 @@ share/icons/hicolor/48x48/actions/konv_message.png
 share/icons/hicolor/48x48/apps/konversation.png
 share/icons/hicolor/64x64/actions/konv_message.png
 share/icons/hicolor/64x64/apps/konversation.png
-share/knotifications5/konversation.notifyrc
+share/knotifications6/konversation.notifyrc
 share/knsrcfiles/konversation_nicklist_theme.knsrc
 %%DATADIR%%/scripting_support/python/konversation/__init__.py
 %%DATADIR%%/scripting_support/python/konversation/dbus.py
@@ -166,4 +166,4 @@ share/locale/uk/LC_MESSAGES/konversation.mo
 share/locale/zh_CN/LC_MESSAGES/konversation.mo
 share/locale/zh_TW/LC_MESSAGES/konversation.mo
 share/metainfo/org.kde.konversation.appdata.xml
-share/qlogging-categories5/konversation.categories
+share/qlogging-categories6/konversation.categories

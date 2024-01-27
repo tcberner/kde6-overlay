@@ -1,5 +1,6 @@
 PORTNAME=	libkdcraw
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics kde kde-applications
 PKGNAMESUFFIX?=	-${FLAVOR}
 
@@ -11,8 +12,8 @@ LICENSE=	GPLv2+
 
 LIB_DEPENDS=	libjasper.so:graphics/jasper \
 		liblcms.so:graphics/lcms \
-		libxml2.so:textproc/libxml2 \
-		libraw.so:graphics/libraw
+		libraw.so:graphics/libraw \
+		libxml2.so:textproc/libxml2
 
 FLAVORS=	qt5 qt6
 FLAVOR?=	qt5
@@ -20,12 +21,15 @@ FLAVOR?=	qt5
 USES=		cmake compiler:c++11-lang jpeg kde:${FLAVOR:S/qt//} pkgconfig \
 		qt:${FLAVOR:S/qt//} tar:xz
 USE_KDE=	ecm:build
+USE_LDCONFIG=	yes
 _USE_QT_qt5=	core gui buildtools:build qmake:build
 _USE_QT_qt6=	base
 USE_QT=		${_USE_QT_${FLAVOR}}
-USE_LDCONFIG=	yes
-CMAKE_ARGS=	-DWITH_OpenMP:BOOL=False \
-		-DENABLE_RAWSPEED=True
+CMAKE_ARGS=	-DENABLE_RAWSPEED=True \
+		-DQT_MAJOR_VERSION="${FLAVOR:S/qt//}" \
+		-DWITH_OpenMP:BOOL=False
+
+PLIST=		pkg-plist.${FLAVOR}
 
 PLIST=		pkg-plist.${FLAVOR}
 

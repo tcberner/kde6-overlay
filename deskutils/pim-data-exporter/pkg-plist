@@ -1,6 +1,6 @@
 bin/pimdataexporter
 bin/pimdataexporterconsole
-lib/libpimdataexporterprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libpimdataexporterprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libpimdataexporterprivate.so.6
 share/applications/org.kde.pimdataexporter.desktop
 share/config.kcfg/pimdataexporterglobalconfig.kcfg

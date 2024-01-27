@@ -7,9 +7,9 @@ bin/akonadi_unifiedmailbox_agent
 bin/kmail
 bin/kmail-refresh-settings
 bin/ktnef
-lib/libkmailprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libkmailprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libkmailprivate.so.6
-lib/libmailfilteragentprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libmailfilteragentprivate.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libmailfilteragentprivate.so.6
 %%QT_PLUGINDIR%%/kmailpart.so
 %%QT_PLUGINDIR%%/pim6/akonadi/config/archivemailagentconfig.so

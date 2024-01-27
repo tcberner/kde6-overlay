@@ -1,8 +1,14 @@
 bin/sieveeditor
-lib/libsieveeditor.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.85
+lib/libsieveeditor.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libsieveeditor.so.6
 share/applications/org.kde.sieveeditor.desktop
 share/config.kcfg/sieveeditorglobalconfig.kcfg
+share/icons/hicolor/16x16/apps/sieveeditor.png
+share/icons/hicolor/22x22/apps/sieveeditor.png
+share/icons/hicolor/32x32/apps/sieveeditor.png
+share/icons/hicolor/48x48/apps/sieveeditor.png
+share/icons/hicolor/64x64/apps/sieveeditor.png
+share/icons/hicolor/scalable/apps/sieveeditor.svg
 share/locale/ar/LC_MESSAGES/sieveeditor.mo
 share/locale/ast/LC_MESSAGES/sieveeditor.mo
 share/locale/az/LC_MESSAGES/sieveeditor.mo
