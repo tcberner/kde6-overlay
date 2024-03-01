@@ -69,11 +69,11 @@ lib/cmake/KPim6MailImporterAkonadi/KPim6MailImporterAkonadiConfigVersion.cmake
 lib/cmake/KPim6MailImporterAkonadi/KPim6MailImporterAkonadiTargets-%%CMAKE_BUILD_TYPE%%.cmake
 lib/cmake/KPim6MailImporterAkonadi/KPim6MailImporterAkonadiTargets.cmake
 lib/libKPim6MailImporter.so
-lib/libKPim6MailImporter.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6MailImporter.so.6
+lib/libKPim6MailImporter.so.%%KDE_PLASMA_VERSION%%
 lib/libKPim6MailImporterAkonadi.so
-lib/libKPim6MailImporterAkonadi.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6MailImporterAkonadi.so.6
+lib/libKPim6MailImporterAkonadi.so.%%KDE_PLASMA_VERSION%%
 share/locale/af/LC_MESSAGES/libmailimporter6.mo
 share/locale/ar/LC_MESSAGES/libmailimporter6.mo
 share/locale/be/LC_MESSAGES/libmailimporter6.mo

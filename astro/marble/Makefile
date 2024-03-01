@@ -16,9 +16,8 @@ USES=		cmake compiler:c++11-lang desktop-file-utils gettext kde:5 \
 		qt:5 shared-mime-info tar:xz xorg
 USE_KDE=	attica auth codecs completion config configwidgets coreaddons \
 		crash doctools i18n jobwidgets kio newstuff package parts \
-		phonon plasma-framework plasma-workspace-wallpapers runner \
-		service solid sonnet textwidgets wallet widgetsaddons \
-		windowsystem xmlgui \
+		phonon plasma-framework runner service solid sonnet \
+		textwidgets wallet widgetsaddons windowsystem xmlgui \
 		ecm:build
 USE_QT=		concurrent core dbus declarative designer gui location network \
 		opengl printsupport script serialport sql svg webchannel \

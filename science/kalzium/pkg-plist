@@ -13,7 +13,6 @@ include/libkdeedu/spectrumparser.h
 lib/libscience.so
 lib/libscience.so.5
 lib/libscience.so.5.0.0
-man/man1/kalzium.1.gz
 share/applications/org.kde.kalzium.desktop
 share/applications/org.kde.kalzium_cml.desktop
 share/config.kcfg/kalzium.kcfg
@@ -425,5 +424,6 @@ share/locale/uk/LC_MESSAGES/kalzium.mo
 share/locale/xh/LC_MESSAGES/kalzium.mo
 share/locale/zh_CN/LC_MESSAGES/kalzium.mo
 share/locale/zh_TW/LC_MESSAGES/kalzium.mo
+share/man/man1/kalzium.1.gz
 share/metainfo/org.kde.kalzium.appdata.xml
 share/qlogging-categories6/kalzium.categories

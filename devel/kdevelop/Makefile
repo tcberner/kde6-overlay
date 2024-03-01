@@ -32,7 +32,7 @@ USE_KDE=	archive attica auth bookmarks codecs completion config \
 		syntaxhighlighting texteditor textwidgets threadweaver \
 		widgetsaddons windowsystem xmlgui
 USE_QT=		concurrent core dbus declarative gui help network printsupport \
-		script sql widgets xml webengine \
+		script sql webengine widgets xml \
 		buildtools:build qmake:build
 USE_XORG=	x11
 SHEBANG_FILES=	kdevplatform/util/kdevplatform_shell_environment.sh \
@@ -46,10 +46,11 @@ USE_QT+=	testlib
 
 CMAKE_ARGS=	-DCMAKE_POLICY_DEFAULT_CMP0074=NEW \
 		-DClang_DIR=${LLVM_PREFIX}/lib/cmake/clang
+CMAKE_OFF=	USE_QTWEBKIT
 
 # Versioning values, to reduce plist churn
 SO_VER=		513
-SO_VER_LONG=	5.13.240185
+SO_VER_LONG=	5.13.240200
 PLIST_SUB+=	SO_VER=${SO_VER} SO_VER_LONG=${SO_VER_LONG}
 
 SHEBANG_LANG=	zsh

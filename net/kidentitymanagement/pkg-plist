@@ -37,14 +37,14 @@ lib/cmake/KPim6IdentityManagementWidgets/KPim6IdentityManagementWidgetsConfigVer
 lib/cmake/KPim6IdentityManagementWidgets/KPim6IdentityManagementWidgetsTargets-%%CMAKE_BUILD_TYPE%%.cmake
 lib/cmake/KPim6IdentityManagementWidgets/KPim6IdentityManagementWidgetsTargets.cmake
 lib/libKPim6IdentityManagementCore.so
-lib/libKPim6IdentityManagementCore.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6IdentityManagementCore.so.6
+lib/libKPim6IdentityManagementCore.so.%%KDE_PLASMA_VERSION%%
 lib/libKPim6IdentityManagementQuick.so
-lib/libKPim6IdentityManagementQuick.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6IdentityManagementQuick.so.6
+lib/libKPim6IdentityManagementQuick.so.%%KDE_PLASMA_VERSION%%
 lib/libKPim6IdentityManagementWidgets.so
-lib/libKPim6IdentityManagementWidgets.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6IdentityManagementWidgets.so.6
+lib/libKPim6IdentityManagementWidgets.so.%%KDE_PLASMA_VERSION%%
 %%QT_QMLDIR%%/org/kde/kidentitymanagement/BasicIdentityEditorCard.qml
 %%QT_QMLDIR%%/org/kde/kidentitymanagement/CryptographyEditorCard.qml
 %%QT_QMLDIR%%/org/kde/kidentitymanagement/IdentityConfigurationForm.qml

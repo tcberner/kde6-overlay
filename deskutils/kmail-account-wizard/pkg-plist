@@ -1,12 +1,4 @@
 bin/accountwizard
-lib/libaccountwizard.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
-lib/libaccountwizard.so.6
-%%QT_QMLDIR%%/org/kde/pim/accountwizard/components/BasePage.qml
-%%QT_QMLDIR%%/org/kde/pim/accountwizard/components/InfoDetail.qml
-%%QT_QMLDIR%%/org/kde/pim/accountwizard/components/accountwizardplugin.qmltypes
-%%QT_QMLDIR%%/org/kde/pim/accountwizard/components/kde-qmlmodule.version
-%%QT_QMLDIR%%/org/kde/pim/accountwizard/components/libaccountwizardplugin.so
-%%QT_QMLDIR%%/org/kde/pim/accountwizard/components/qmldir
 share/applications/org.kde.accountwizard.desktop
 share/locale/ar/LC_MESSAGES/accountwizard.mo
 share/locale/ast/LC_MESSAGES/accountwizard.mo
@@ -65,5 +57,3 @@ share/locale/ug/LC_MESSAGES/accountwizard.mo
 share/locale/uk/LC_MESSAGES/accountwizard.mo
 share/locale/zh_CN/LC_MESSAGES/accountwizard.mo
 share/locale/zh_TW/LC_MESSAGES/accountwizard.mo
-share/qlogging-categories6/accountwizard.categories
-share/qlogging-categories6/accountwizard.renamecategories

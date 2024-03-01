@@ -29,7 +29,7 @@ CMAKE_ARGS=	-DENABLE_RAWSPEED=True \
 		-DQT_MAJOR_VERSION="${FLAVOR:S/qt//}" \
 		-DWITH_OpenMP:BOOL=False
 
-PLIST=		pkg-plist.${FLAVOR}
+PLIST=		${.CURDIR}/pkg-plist.${FLAVOR}
 
 PLIST=		pkg-plist.${FLAVOR}
 

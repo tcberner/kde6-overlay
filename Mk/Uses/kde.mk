@@ -91,30 +91,29 @@ KDE_PLASMA5_VERSION?=		5.27.10
 KDE_PLASMA5_BRANCH?=		stable
 
 # Next KDE Plasma desktop
-KDE_PLASMA6_VERSION?=		5.92.0
-KDE_PLASMA6_BRANCH?=		unstable
+KDE_PLASMA6_VERSION?=		6.0.0
+KDE_PLASMA6_BRANCH?=		stable
 
 # Current KDE frameworks.
-KDE_FRAMEWORKS5_VERSION?=	5.113.0
+KDE_FRAMEWORKS5_VERSION?=	5.115.0
 KDE_FRAMEWORKS5_BRANCH?=	stable
 
 # Next KDE Frameworks (Qt6 based)
-KDE_FRAMEWORKS6_VERSION?=	5.248.0
-KDE_FRAMEWORKS6_BRANCH?=	unstable
+KDE_FRAMEWORKS6_VERSION?=	6.0.0
+KDE_FRAMEWORKS6_BRANCH?=	stable
 
 # Current KDE applications.
-KDE_APPLICATIONS5_VERSION?=	23.08.4
-KDE_APPLICATIONS5_SHLIB_VER?=	5.24.4
+KDE_APPLICATIONS5_VERSION?=	23.08.5
+KDE_APPLICATIONS5_SHLIB_VER?=	5.24.5
 # G as in KDE Gear, and as in "don't make the variable name longer than required"
-KDE_APPLICATIONS5_SHLIB_G_VER?=	23.8.4
+KDE_APPLICATIONS5_SHLIB_G_VER?=	23.8.5
 KDE_APPLICATIONS5_BRANCH?=	stable
 
 # Next KDE applications.
-KDE_APPLICATIONS6_VERSION?=	24.01.90
-KDE_APPLICATIONS6_SHLIB_VER?=	5.24.5
-# G as in KDE Gear, and as in "don't make the variable name longer than required"
-KDE_APPLICATIONS6_SHLIB_G_VER?=	24.01.90
-KDE_APPLICATIONS6_BRANCH?=	unstable
+KDE_APPLICATIONS6_VERSION?=	24.02.0
+KDE_APPLICATIONS6_SHLIB_VER?=	5.24.6
+KDE_APPLICATIONS6_SHLIB_G_VER?=	24.02.0
+KDE_APPLICATIONS6_BRANCH?=	stable
 
 # Extended KDE universe applications.
 CALLIGRA_VERSION?=		2.9.11
@@ -214,7 +213,7 @@ MASTER_SITES?=		KDE/${KDE_FRAMEWORKS_BRANCH}/frameworks/${KDE_FRAMEWORKS_VERSION
 MASTER_SITES?=		KDE/${KDE_FRAMEWORKS_BRANCH}/frameworks/${KDE_FRAMEWORKS_VERSION:R}
 .          endif
 .        else
-MASTER_SITES?=		KDE/${KDE_FRAMEWORKS_BRANCH}/frameworks/${KDE_FRAMEWORKS_VERSION}
+MASTER_SITES?=		KDE/${KDE_FRAMEWORKS_BRANCH}/frameworks/${KDE_FRAMEWORKS_VERSION:R}
 .        endif
 DIST_SUBDIR?=		KDE/frameworks/${KDE_FRAMEWORKS_VERSION}
 .        if ${_KDE_VERSION:M6}
@@ -239,9 +238,7 @@ CMAKE_ARGS+=	-DCMAKE_MODULE_PATH="${LOCALBASE};${KDE_PREFIX}" \
 		-DCMAKE_INSTALL_PREFIX="${KDE_PREFIX}" \
 		-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=true
 
-# Set man-page installation prefix.
-CMAKE_ARGS+=	-DKDE_INSTALL_MANDIR:PATH="${KDE_PREFIX}/man" \
-		-DMAN_INSTALL_DIR:PATH="${KDE_PREFIX}/man"
+KDE_MAN_PREFIX?=	${KDE_PREFIX}/share/man
 
 # Enforce the chosen Qt Version
 CMAKE_ARGS+=	-DQT_MAJOR_VERSION=${_QT_VER}
@@ -406,7 +403,9 @@ kde-bookmarks_PORT=		devel/kf${_KDE_VERSION}-kbookmarks
 kde-bookmarks_LIB=		libKF${_KDE_VERSION}Bookmarks.so
 
 kde-breeze-icons_PORT=		x11-themes/kf${_KDE_VERSION}-breeze-icons
-kde-breeze-icons_PATH=		${KDE_PREFIX}/share/icons/breeze/index.theme
+kde-breeze-icons_PATH5=		${KDE_PREFIX}/share/breeze-icons/kf${_KDE_VERSION}-breeze-icons-dummy
+kde-breeze-icons_PATH6=		${KDE_PREFIX}/share/icons/breeze/index.theme
+kde-breeze-icons_PATH=		${kde-breeze-icons_PATH${_KDE_VERSION}}
 kde-breeze-icons_TYPE=		run
 
 kde-codecs_PORT=		textproc/kf${_KDE_VERSION}-kcodecs
@@ -743,7 +742,10 @@ kde-libkscreen_PORT=		x11/plasma${_KDE_VERSION}-libkscreen
 kde-libkscreen_LIB=		libKF${_KDE_VERSION}Screen.so
 
 kde-libksysguard_PORT=		sysutils/plasma${_KDE_VERSION}-libksysguard
-kde-libksysguard_LIB=		libksgrd.so
+kde-libksysguard_LIB5=		libksgrd.so
+kde-libksysguard_LIB6=		libKSysGuardSystemStats.so
+kde-libksysguard_LIB=		${kde-libksysguard_LIB${_KDE_VERSION}}
+
 
 kde-milou_PORT=			deskutils/plasma${_KDE_VERSION}-milou
 kde-milou_PATH5=			${KDE_PREFIX}/lib/libmilou.so.5
@@ -781,7 +783,9 @@ kde-plasma-workspace_PORT=	x11/plasma${_KDE_VERSION}-plasma-workspace
 kde-plasma-workspace_LIB=	libkworkspace${_KDE_VERSION}.so
 
 kde-plasma-workspace-wallpapers_PORT=	x11-themes/plasma${_KDE_VERSION}-plasma-workspace-wallpapers
-kde-plasma-workspace-wallpapers_PATH=	${KDE_PREFIX}/share/wallpapers/Autumn/contents/images/1280x1024.jpg
+kde-plasma-workspace-wallpapers_PATH5=	${KDE_PREFIX}/share/plasma-workspace-wallpapers/plasma${_KDE_VERSION}-plasma-wallpapers-dummy
+kde-plasma-workspace-wallpapers_PATH6=	${KDE_PREFIX}/share/wallpapers/Autumn/contents/images/1280x1024.jpg
+kde-plasma-workspace-wallpapers_PATH=	${kde-plasma-workspace-wallpapers_PATH${_KDE_VERSION}}
 
 kde-polkit-kde-agent-1_PORT=	sysutils/plasma${_KDE_VERSION}-polkit-kde-agent-1
 kde-polkit-kde-agent-1_PATH=	${KDE_PREFIX}/lib/libexec/polkit-kde-authentication-agent-1

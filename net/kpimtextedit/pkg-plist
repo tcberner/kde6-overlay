@@ -29,8 +29,8 @@ lib/cmake/KPim6TextEdit/KPim6TextEditConfigVersion.cmake
 lib/cmake/KPim6TextEdit/KPim6TextEditTargets-%%CMAKE_BUILD_TYPE%%.cmake
 lib/cmake/KPim6TextEdit/KPim6TextEditTargets.cmake
 lib/libKPim6TextEdit.so
-lib/libKPim6TextEdit.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6TextEdit.so.6
+lib/libKPim6TextEdit.so.%%KDE_PLASMA_VERSION%%
 share/locale/ar/LC_MESSAGES/libkpimtextedit6.mo
 share/locale/az/LC_MESSAGES/libkpimtextedit6.mo
 share/locale/bs/LC_MESSAGES/libkpimtextedit6.mo

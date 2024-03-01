@@ -85,11 +85,11 @@ lib/cmake/KPim6AkonadiContactWidgets/KPim6AkonadiContactWidgetsConfigVersion.cma
 lib/cmake/KPim6AkonadiContactWidgets/KPim6AkonadiContactWidgetsTargets-%%CMAKE_BUILD_TYPE%%.cmake
 lib/cmake/KPim6AkonadiContactWidgets/KPim6AkonadiContactWidgetsTargets.cmake
 lib/libKPim6AkonadiContactCore.so
-lib/libKPim6AkonadiContactCore.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6AkonadiContactCore.so.6
+lib/libKPim6AkonadiContactCore.so.%%KDE_PLASMA_VERSION%%
 lib/libKPim6AkonadiContactWidgets.so
-lib/libKPim6AkonadiContactWidgets.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6AkonadiContactWidgets.so.6
+lib/libKPim6AkonadiContactWidgets.so.%%KDE_PLASMA_VERSION%%
 %%QT_PLUGINDIR%%/akonadi_serializer_addressee.so
 %%QT_PLUGINDIR%%/akonadi_serializer_contactgroup.so
 share/akonadi/plugins/serializer/akonadi_serializer_addressee.desktop

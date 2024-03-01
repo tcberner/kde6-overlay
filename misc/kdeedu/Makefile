@@ -46,7 +46,7 @@ KIG_DESC=		Interactive geometry application
 KIG_RUN_DEPENDS=	kig>=${KDE_APPLICATIONS_VERSION}:math/kig
 
 KITEN_DESC=		Japanese reference/study tool
-KITEN_RUN_DEPENDS=	kiten>=${KDE_APPLICATIONS_VERSION}:japanese/kiten
+KITEN_RUN_DEPENDS=	ja-kiten>=${KDE_APPLICATIONS_VERSION}:japanese/kiten
 
 KLETTRES_DESC=		Alphabet learning tool
 KLETTRES_RUN_DEPENDS=	klettres>=${KDE_APPLICATIONS_VERSION}:misc/klettres

@@ -15,9 +15,9 @@ LIB_DEPENDS=	libQCoro6Core.so:devel/qcoro@qt6 \
 		libdbus-1.so:devel/dbus \
 		libolm.so:security/olm
 BUILD_DEPENDS=	libquotient-qt6>=0.8.1:net-im/libquotient@qt6 \
-		kquickimageeditor>=0.2.0:graphics/kquickimageeditor 
+		kquickimageeditor-qt6>=0.2.0:graphics/kquickimageeditor@qt6 
 # Quotient is a static lib, doesn't need to be in RUN_DEPENDS
-RUN_DEPENDS=	kquickimageeditor>=0.2.0:graphics/kquickimageeditor
+RUN_DEPENDS=	kquickimageeditor-qt6>=0.2.0:graphics/kquickimageeditor@qt6
 
 USES=		cmake compiler:c++20-lang desktop-file-utils gettext kde:6 \
 		pkgconfig qt:6 tar:xz xorg

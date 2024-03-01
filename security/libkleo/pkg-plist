@@ -144,8 +144,8 @@ lib/cmake/KPim6Libkleo/KPim6LibkleoConfigVersion.cmake
 lib/cmake/KPim6Libkleo/KPim6LibkleoTargets-%%CMAKE_BUILD_TYPE%%.cmake
 lib/cmake/KPim6Libkleo/KPim6LibkleoTargets.cmake
 lib/libKPim6Libkleo.so
-lib/libKPim6Libkleo.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6Libkleo.so.6
+lib/libKPim6Libkleo.so.%%KDE_PLASMA_VERSION%%
 %%DATADIR%%patra/pics/chiasmus_chi.png
 %%DATADIR%%patra/pics/hi16-app-gpg.png
 %%DATADIR%%patra/pics/hi16-app-gpgsm.png

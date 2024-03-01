@@ -23,9 +23,9 @@ lib/libKF6Konq.so
 lib/libKF6Konq.so.5.97.0
 lib/libKF6Konq.so.7
 lib/libkonqsidebarplugin.so
-lib/libkonqsidebarplugin.so.23.01.90
+lib/libkonqsidebarplugin.so.%%KDE_APPLICATIONS_VERSION%%
 lib/libkonqsidebarplugin.so.6
-lib/libkonquerorprivate.so.23.01.90
+lib/libkonquerorprivate.so.%%KDE_APPLICATIONS_VERSION%%
 lib/libkonquerorprivate.so.5
 lib/libkwebenginepart.so
 %%QT_PLUGINDIR%%/akregatorkonqfeedicon.so

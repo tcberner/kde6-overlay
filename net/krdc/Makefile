@@ -2,6 +2,8 @@ PORTNAME=	krdc
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
 CATEGORIES=	net kde kde-applications
 
+BROKEN=		net/freerdp2 has broken cmake files
+
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	RDP and VNC client for KDE
 WWW=		https://kde.org/applications/internet/krdc/

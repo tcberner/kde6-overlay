@@ -1,3 +1,3 @@
-TIMESTAMP = 1705041307
-SHA256 (KDE/release-service/24.01.90/kbackup-24.01.90.tar.xz) = 0ce37a066405d59e58caa072cdb681d10cb040668cb8c6bfa29bc8e733043883
-SIZE (KDE/release-service/24.01.90/kbackup-24.01.90.tar.xz) = 409244
+TIMESTAMP = 1708670021
+SHA256 (KDE/release-service/24.02.0/kbackup-24.02.0.tar.xz) = eb30cef79442ec3d43a7d9ab018b5175eb9ecfc3c32a69bae4fa4d765c5e92bd
+SIZE (KDE/release-service/24.02.0/kbackup-24.02.0.tar.xz) = 409396

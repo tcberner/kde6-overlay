@@ -114,11 +114,11 @@ lib/cmake/KPim6PimCommonAkonadi/KPim6PimCommonAkonadiConfigVersion.cmake
 lib/cmake/KPim6PimCommonAkonadi/KPim6PimCommonAkonadiTargets-%%CMAKE_BUILD_TYPE%%.cmake
 lib/cmake/KPim6PimCommonAkonadi/KPim6PimCommonAkonadiTargets.cmake
 lib/libKPim6PimCommon.so
-lib/libKPim6PimCommon.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6PimCommon.so.6
+lib/libKPim6PimCommon.so.%%KDE_PLASMA_VERSION%%
 lib/libKPim6PimCommonAkonadi.so
-lib/libKPim6PimCommonAkonadi.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6PimCommonAkonadi.so.6
+lib/libKPim6PimCommonAkonadi.so.%%KDE_PLASMA_VERSION%%
 %%QT_PLUGINDIR%%/designer/pimcommon6akonadiwidgets.so
 %%QT_PLUGINDIR%%/designer/pimcommon6widgets.so
 share/locale/ar/LC_MESSAGES/libpimcommon6.mo

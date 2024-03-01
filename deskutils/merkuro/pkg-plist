@@ -87,9 +87,15 @@ share/applications/org.kde.merkuro.mail.desktop
 share/icons/hicolor/128x128/apps/org.kde.merkuro.calendar.png
 share/icons/hicolor/128x128/apps/org.kde.merkuro.contact.png
 share/icons/hicolor/128x128/apps/org.kde.merkuro.mail.png
+share/icons/hicolor/16x16/apps/org.kde.merkuro.calendar.png
+share/icons/hicolor/16x16/apps/org.kde.merkuro.mail.png
+share/icons/hicolor/%%KDE_APPLICATIONS_VERSION_SHORT%%x%%KDE_APPLICATIONS_VERSION_SHORT%%/apps/org.kde.merkuro.calendar.png
+share/icons/hicolor/%%KDE_APPLICATIONS_VERSION_SHORT%%x%%KDE_APPLICATIONS_VERSION_SHORT%%/apps/org.kde.merkuro.mail.png
 share/icons/hicolor/256x256/apps/org.kde.merkuro.calendar.png
 share/icons/hicolor/256x256/apps/org.kde.merkuro.contact.png
 share/icons/hicolor/256x256/apps/org.kde.merkuro.mail.png
+share/icons/hicolor/32x32/apps/org.kde.merkuro.calendar.png
+share/icons/hicolor/32x32/apps/org.kde.merkuro.mail.png
 share/icons/hicolor/48x48/apps/org.kde.merkuro.calendar.png
 share/icons/hicolor/48x48/apps/org.kde.merkuro.contact.png
 share/icons/hicolor/48x48/apps/org.kde.merkuro.mail.png
@@ -121,6 +127,7 @@ share/locale/fi/LC_MESSAGES/plasma_applet_org.kde.merkuro.contact.mo
 share/locale/fr/LC_MESSAGES/merkuro.mo
 share/locale/fr/LC_MESSAGES/plasma_applet_org.kde.merkuro.contact.mo
 share/locale/gl/LC_MESSAGES/plasma_applet_org.kde.merkuro.contact.mo
+share/locale/hi/LC_MESSAGES/merkuro.mo
 share/locale/hu/LC_MESSAGES/merkuro.mo
 share/locale/ia/LC_MESSAGES/merkuro.mo
 share/locale/ia/LC_MESSAGES/plasma_applet_org.kde.merkuro.contact.mo

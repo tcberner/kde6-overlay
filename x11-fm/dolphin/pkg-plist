@@ -30,6 +30,7 @@ share/config.kcfg/dolphin_versioncontrolsettings.kcfg
 share/dbus-1/interfaces/org.freedesktop.FileManager1.xml
 share/dbus-1/services/org.kde.dolphin.FileManager1.service
 %%DATADIR%%/dolphinpartactions.desktop
+share/icons/hicolor/scalable/apps/org.kde.dolphin.svg
 share/kconf_update/dolphin_detailsmodesettings.upd
 share/kglobalaccel/org.kde.dolphin.desktop
 share/knsrcfiles/servicemenu.knsrc

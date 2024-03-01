@@ -33,11 +33,11 @@ lib/cmake/KPim6MimeTreeParserWidgets/KPim6MimeTreeParserWidgetsConfigVersion.cma
 lib/cmake/KPim6MimeTreeParserWidgets/KPim6MimeTreeParserWidgetsTargets-%%CMAKE_BUILD_TYPE%%.cmake
 lib/cmake/KPim6MimeTreeParserWidgets/KPim6MimeTreeParserWidgetsTargets.cmake
 lib/libKPim6MimeTreeParserCore.so
-lib/libKPim6MimeTreeParserCore.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6MimeTreeParserCore.so.6
+lib/libKPim6MimeTreeParserCore.so.%%KDE_PLASMA_VERSION%%
 lib/libKPim6MimeTreeParserWidgets.so
-lib/libKPim6MimeTreeParserWidgets.so.5.%%KDE_APPLICATIONS_VERSION_SHORT%%0.90
 lib/libKPim6MimeTreeParserWidgets.so.6
+lib/libKPim6MimeTreeParserWidgets.so.%%KDE_PLASMA_VERSION%%
 %%QT_MKSPECDIR%%/modules/qt_MimeTreeParserCore.pri
 %%QT_MKSPECDIR%%/modules/qt_MimeTreeParserWidgets.pri
 %%QT_QMLDIR%%/org/kde/pim/mimetreeparser/MailViewer.qml
